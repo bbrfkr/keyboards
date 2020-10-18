@@ -1,1 +1,14 @@
 # Scatter42 - 40%分割型キーボード
+Scatter42は以下の特徴を持つ、40%キーボードです。
+
+- column-staggered
+- 小指に無理をさせず、かつ親指を内側に入れる配置を避けるように意識したキー配列
+- 制御キーの数も十分に取れる42キー
+
+## v1.0.0基板
+![scatter42-pcb](https://user-images.githubusercontent.com/15024038/96365991-a57ec700-117f-11eb-8c86-e345fd91c0e0.png)
+
+## SU120での試作機
+本キーボードは試作段階で [@e3w2q](https://github.com/e3w2q) さんの [SU120](https://e3w2q.github.io/9/) を利用させていただいてます。ありがとうございます :bow:
+
+![scatter42-by-su120](https://user-images.githubusercontent.com/15024038/96366052-2047e200-1180-11eb-83e5-8532de249ae0.jpg)
