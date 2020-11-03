@@ -7,4 +7,4 @@ Scatter42-Chocは以下の特徴を持つ、40%キーボードです。
 - kailh ロープロファイルスイッチに対応
 
 ## 最新バージョン基板
-![scatter42-choc-pcb](https://user-images.githubusercontent.com/15024038/97658697-52c2da80-1ab0-11eb-9f08-d445dd3a2fab.png)
+![scatter42-choc-pcb](https://user-images.githubusercontent.com/15024038/98013628-f22ff680-1e3d-11eb-814c-36595bf81750.png)
