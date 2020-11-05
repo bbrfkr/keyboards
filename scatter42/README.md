@@ -7,7 +7,7 @@ Scatter42は以下の特徴を持つ、40%キーボードです。
 - Cherry MXスイッチに対応
 
 ## 最新バージョン基板
-![scatter42-pcb](https://user-images.githubusercontent.com/15024038/98013624-f0fec980-1e3d-11eb-89e5-8ac297d1797f.png)
+![scatter42-pcb](https://user-images.githubusercontent.com/15024038/98260272-7ca36200-1fc6-11eb-8dad-d4f46d312bbb.png)
 
 ## SU120での試作機
 本キーボードは試作段階で [@e3w2q](https://github.com/e3w2q) さんの [SU120](https://e3w2q.github.io/9/) を利用させていただいてます。ありがとうございます :bow:
