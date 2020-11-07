@@ -4,10 +4,10 @@ Scatter42は以下の特徴を持つ、40%キーボードです。
 - columnar-staggered
 - 小指に無理をさせず、かつ親指を内側に入れる配置を避けるように意識したキー配列
 - 制御キーの数も十分に取れる42キー
-- Cherry MXスイッチに対応
+- Cherry MXとKailh low-profileスイッチに対応
 
 ## 最新バージョン基板
-![scatter42-pcb](https://user-images.githubusercontent.com/15024038/98260272-7ca36200-1fc6-11eb-8dad-d4f46d312bbb.png)
+![scatter-pcb](https://user-images.githubusercontent.com/15024038/98453739-ed51a680-219f-11eb-8164-7780ea23ad7b.png)
 
 ## SU120での試作機
 本キーボードは試作段階で [@e3w2q](https://github.com/e3w2q) さんの [SU120](https://e3w2q.github.io/9/) を利用させていただいてます。ありがとうございます :bow:
