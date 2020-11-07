@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name scatter42)(type KiCad)(uri ${KIPRJMOD}/scatter42.pretty)(options "")(descr ""))
+)

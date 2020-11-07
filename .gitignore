@@ -2,3 +2,7 @@
 *cache*
 *.net
 *autosave*
+*.gbr
+*.drl
+*.gbrjob
+*drl_map.ps
