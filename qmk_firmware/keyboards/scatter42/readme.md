@@ -1,12 +1,12 @@
 # scatter42
 
-![scatter42](imgur.com image replace me!)
+[![scatter42](https://i.imgur.com/AZ66Vdn.jpg)](https://imgur.com/AZ66Vdn)
 
-*A short description of the keyboard/project*
+A split keyboard with 39 (4rows and 5columns) keys and 3 keys for thumbs.
 
-* Keyboard Maintainer: [bbrfkr](https://github.com/yourusername)
-* Hardware Supported: *The PCBs, controllers supported*
-* Hardware Availability: *Links to where you can find this hardware*
+* Keyboard Maintainer: [bbrfkr](https://github.com/bbrfkr) [@bbrfkr](https://twitter.com/bbrfkr)
+* Hardware Supported: scatter42 PCB, Pro Micro
+* Hardware Availability: https://bbrfkr.booth.pm/
 
 Make example for this keyboard (after setting up your build environment):
 
