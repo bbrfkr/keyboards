@@ -2,8 +2,8 @@
     "keyboard_name": "scatter42",
     "url": "https://github.com/bbrfkr/keyboards/tree/master/scatter42",
     "maintainer": "bbrfkr",
-    "width": 13,
-    "height": 4.5,
+    "width": 14,
+    "height": 5.125,
     "layouts": {
         "LAYOUT": {
             "layout": [
@@ -193,29 +193,29 @@
                     "y": 3.625
                 },
                 {
+                    "label": "Alt",
+                    "x": 9.45,
+                    "y": 3.625
+                },
+                {
                     "label": "Lower",
                     "x": 4.5,
-                    "y": 3.625
-                },
-                {
-                    "label": "Space",
-                    "x": 5.5,
-                    "y": 3.625
-                },
-                {
-                    "label": "Enter",
-                    "x": 7.45,
-                    "y": 3.625
+                    "y": 3.875
                 },
                 {
                     "label": "Raise",
                     "x": 8.45,
-                    "y": 3.625
+                    "y": 3.875
                 },
                 {
-                    "label": "Alt",
-                    "x": 9.45,
-                    "y": 3.625
+                    "label": "Space",
+                    "x": 5.5,
+                    "y": 4.125
+                },
+                {
+                    "label": "Enter",
+                    "x": 7.45,
+                    "y": 4.125
                 }
             ]
         }
