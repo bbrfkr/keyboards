@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L foostan_kbd:SW_PUSH RSW0
+L scatter42:SW_PUSH RSW0
 U 1 1 5F942922
 P 1150 3400
 F 0 "RSW0" H 1150 3655 50  0000 C CNN
@@ -24,23 +24,12 @@ F 3 "" H 1150 3400 50  0000 C CNN
 	1    1150 3400
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5F943AE7
-P 1450 3500
-F 0 "#PWR0103" H 1450 3250 50  0001 C CNN
-F 1 "GND" H 1455 3327 50  0000 C CNN
-F 2 "" H 1450 3500 50  0001 C CNN
-F 3 "" H 1450 3500 50  0001 C CNN
-	1    1450 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1450 3500 1450 3400
 Text GLabel 850  3400 0    50   Input ~ 0
 reset
 $Comp
-L foostan_kbd:MJ-4PP-9 J0
+L scatter42:MJ-4PP-9 J0
 U 1 1 5F9691F8
 P 850 2450
 F 0 "J0" H 881 2726 50  0000 C CNN
@@ -50,8 +39,6 @@ F 3 "~" H 1125 2625 50  0001 C CNN
 	1    850  2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2475 1150 2325 1150
 $Comp
 L power:VCC #PWR0101
 U 1 1 5F967B35
@@ -63,9 +50,6 @@ F 3 "" H 2475 1150 50  0001 C CNN
 	1    2475 1150
 	0    1    -1   0   
 $EndComp
-NoConn ~ 2325 850 
-Wire Wire Line
-	2325 950  2475 950 
 $Comp
 L power:GND #PWR0102
 U 1 1 5F962858
@@ -76,59 +60,6 @@ F 2 "" H 2475 950 50  0001 C CNN
 F 3 "" H 2475 950 50  0001 C CNN
 	1    2475 950 
 	0    -1   1    0   
-$EndComp
-Text GLabel 2325 1050 2    50   Input ~ 0
-reset
-Text GLabel 2325 1750 2    50   Input ~ 0
-col5
-Text GLabel 2325 1650 2    50   Input ~ 0
-col4
-Text GLabel 2325 1550 2    50   Input ~ 0
-col3
-Text GLabel 2325 1450 2    50   Input ~ 0
-col2
-Text GLabel 2325 1350 2    50   Input ~ 0
-col1
-Text GLabel 2325 1250 2    50   Input ~ 0
-col0
-Text GLabel 925  1450 0    50   Input ~ 0
-row0
-Text GLabel 925  1550 0    50   Input ~ 0
-row1
-Text GLabel 925  1650 0    50   Input ~ 0
-row2
-Text GLabel 925  1750 0    50   Input ~ 0
-row3
-$Comp
-L power:GND #PWR0104
-U 1 1 5F95A90C
-P 800 1150
-F 0 "#PWR0104" H 800 900 50  0001 C CNN
-F 1 "GND" V 805 1022 50  0000 R CNN
-F 2 "" H 800 1150 50  0001 C CNN
-F 3 "" H 800 1150 50  0001 C CNN
-	1    800  1150
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	925  1150 850  1150
-Wire Wire Line
-	925  1050 850  1050
-Wire Wire Line
-	850  1050 850  1150
-Connection ~ 850  1150
-Wire Wire Line
-	850  1150 800  1150
-$Comp
-L foostan_kbd:ProMicro U0
-U 1 1 5F8B01D8
-P 1625 1400
-F 0 "U0" H 1625 2237 60  0000 C CNN
-F 1 "ProMicro" H 1625 2131 60  0000 C CNN
-F 2 "scatter42:ProMicro_v3" H 1725 350 60  0001 C CNN
-F 3 "" H 1725 350 60  0000 C CNN
-	1    1625 1400
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0105
@@ -163,12 +94,6 @@ Wire Wire Line
 	1050 2525 1250 2525
 Text GLabel 1250 2525 2    50   Input ~ 0
 data
-Text GLabel 925  950  0    50   Input ~ 0
-data
-NoConn ~ 925  1850
-NoConn ~ 925  1950
-NoConn ~ 2325 1850
-NoConn ~ 2325 1950
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F9AF907
@@ -214,7 +139,7 @@ F 3 "" H 2175 3350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW0
+L scatter42:SW_PUSH SW0
 U 1 1 5F9BEEDD
 P 3800 1000
 F 0 "SW0" H 3800 1255 50  0000 C CNN
@@ -225,7 +150,7 @@ F 3 "" H 3800 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW5
+L scatter42:SW_PUSH SW5
 U 1 1 5F9C2259
 P 3800 1500
 F 0 "SW5" H 3800 1755 50  0000 C CNN
@@ -236,7 +161,7 @@ F 3 "" H 3800 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW10
+L scatter42:SW_PUSH SW10
 U 1 1 5F9C285A
 P 3800 2000
 F 0 "SW10" H 3800 2255 50  0000 C CNN
@@ -247,7 +172,7 @@ F 3 "" H 3800 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW15
+L scatter42:SW_PUSH SW15
 U 1 1 5F9C2DCE
 P 3800 2500
 F 0 "SW15" H 3800 2755 50  0000 C CNN
@@ -258,7 +183,7 @@ F 3 "" H 3800 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW1
+L scatter42:SW_PUSH SW1
 U 1 1 5F9C5E1C
 P 4550 1000
 F 0 "SW1" H 4550 1255 50  0000 C CNN
@@ -269,7 +194,7 @@ F 3 "" H 4550 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW6
+L scatter42:SW_PUSH SW6
 U 1 1 5F9C5E22
 P 4550 1500
 F 0 "SW6" H 4550 1755 50  0000 C CNN
@@ -280,7 +205,7 @@ F 3 "" H 4550 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW11
+L scatter42:SW_PUSH SW11
 U 1 1 5F9C5E28
 P 4550 2000
 F 0 "SW11" H 4550 2255 50  0000 C CNN
@@ -291,7 +216,7 @@ F 3 "" H 4550 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW16
+L scatter42:SW_PUSH SW16
 U 1 1 5F9C5E2E
 P 4550 2500
 F 0 "SW16" H 4550 2755 50  0000 C CNN
@@ -302,7 +227,7 @@ F 3 "" H 4550 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW2
+L scatter42:SW_PUSH SW2
 U 1 1 5F9C8F22
 P 5300 1000
 F 0 "SW2" H 5300 1255 50  0000 C CNN
@@ -313,7 +238,7 @@ F 3 "" H 5300 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW7
+L scatter42:SW_PUSH SW7
 U 1 1 5F9C8F28
 P 5300 1500
 F 0 "SW7" H 5300 1755 50  0000 C CNN
@@ -324,7 +249,7 @@ F 3 "" H 5300 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW12
+L scatter42:SW_PUSH SW12
 U 1 1 5F9C8F2E
 P 5300 2000
 F 0 "SW12" H 5300 2255 50  0000 C CNN
@@ -335,7 +260,7 @@ F 3 "" H 5300 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW17
+L scatter42:SW_PUSH SW17
 U 1 1 5F9C8F34
 P 5300 2500
 F 0 "SW17" H 5300 2755 50  0000 C CNN
@@ -346,7 +271,7 @@ F 3 "" H 5300 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW3
+L scatter42:SW_PUSH SW3
 U 1 1 5F9CA090
 P 6050 1000
 F 0 "SW3" H 6050 1255 50  0000 C CNN
@@ -357,7 +282,7 @@ F 3 "" H 6050 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW8
+L scatter42:SW_PUSH SW8
 U 1 1 5F9CA096
 P 6050 1500
 F 0 "SW8" H 6050 1755 50  0000 C CNN
@@ -368,7 +293,7 @@ F 3 "" H 6050 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW13
+L scatter42:SW_PUSH SW13
 U 1 1 5F9CA09C
 P 6050 2000
 F 0 "SW13" H 6050 2255 50  0000 C CNN
@@ -379,7 +304,7 @@ F 3 "" H 6050 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW18
+L scatter42:SW_PUSH SW18
 U 1 1 5F9CA0A2
 P 6050 2500
 F 0 "SW18" H 6050 2755 50  0000 C CNN
@@ -390,7 +315,7 @@ F 3 "" H 6050 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW4
+L scatter42:SW_PUSH SW4
 U 1 1 5F9CB3AC
 P 6800 1000
 F 0 "SW4" H 6800 1255 50  0000 C CNN
@@ -401,7 +326,7 @@ F 3 "" H 6800 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW9
+L scatter42:SW_PUSH SW9
 U 1 1 5F9CB3B2
 P 6800 1500
 F 0 "SW9" H 6800 1755 50  0000 C CNN
@@ -412,7 +337,7 @@ F 3 "" H 6800 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW14
+L scatter42:SW_PUSH SW14
 U 1 1 5F9CB3B8
 P 6800 2000
 F 0 "SW14" H 6800 2255 50  0000 C CNN
@@ -423,7 +348,7 @@ F 3 "" H 6800 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW19
+L scatter42:SW_PUSH SW19
 U 1 1 5F9CB3BE
 P 6800 2500
 F 0 "SW19" H 6800 2755 50  0000 C CNN
@@ -434,7 +359,7 @@ F 3 "" H 6800 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW20
+L scatter42:SW_PUSH SW20
 U 1 1 5F9CCFDD
 P 7550 2500
 F 0 "SW20" H 7550 2755 50  0000 C CNN
@@ -810,7 +735,7 @@ col4
 Text GLabel 7250 875  1    50   Input ~ 0
 col5
 $Comp
-L foostan_kbd:SW_PUSH RSW1
+L scatter42:SW_PUSH RSW1
 U 1 1 5FBAEB76
 P 8700 3400
 F 0 "RSW1" H 8700 3655 50  0000 C CNN
@@ -825,7 +750,7 @@ Wire Wire Line
 Text GLabel 8400 3400 0    50   Input ~ 0
 reset_r
 $Comp
-L foostan_kbd:MJ-4PP-9 J1
+L scatter42:MJ-4PP-9 J1
 U 1 1 5FBAEB84
 P 8400 2450
 F 0 "J1" H 8431 2726 50  0000 C CNN
@@ -872,7 +797,7 @@ Connection ~ 8400 1150
 Wire Wire Line
 	8400 1150 8350 1150
 $Comp
-L foostan_kbd:ProMicro U1
+L scatter42:ProMicro U1
 U 1 1 5FBAEBAF
 P 9175 1400
 F 0 "U1" H 9175 2237 60  0000 C CNN
@@ -916,7 +841,7 @@ F 3 "~" H 9725 3350 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW21
+L scatter42:SW_PUSH SW21
 U 1 1 5FBAEBFC
 P 11350 1000
 F 0 "SW21" H 11350 1255 50  0000 C CNN
@@ -927,7 +852,7 @@ F 3 "" H 11350 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW22
+L scatter42:SW_PUSH SW22
 U 1 1 5FBAEC14
 P 12100 1000
 F 0 "SW22" H 12100 1255 50  0000 C CNN
@@ -938,7 +863,7 @@ F 3 "" H 12100 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW27
+L scatter42:SW_PUSH SW27
 U 1 1 5FBAEC1A
 P 12100 1500
 F 0 "SW27" H 12100 1755 50  0000 C CNN
@@ -949,7 +874,7 @@ F 3 "" H 12100 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW32
+L scatter42:SW_PUSH SW32
 U 1 1 5FBAEC20
 P 12100 2000
 F 0 "SW32" H 12100 2255 50  0000 C CNN
@@ -960,7 +885,7 @@ F 3 "" H 12100 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW37
+L scatter42:SW_PUSH SW37
 U 1 1 5FBAEC26
 P 12100 2500
 F 0 "SW37" H 12100 2755 50  0000 C CNN
@@ -971,7 +896,7 @@ F 3 "" H 12100 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW23
+L scatter42:SW_PUSH SW23
 U 1 1 5FBAEC2C
 P 12850 1000
 F 0 "SW23" H 12850 1255 50  0000 C CNN
@@ -982,7 +907,7 @@ F 3 "" H 12850 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW28
+L scatter42:SW_PUSH SW28
 U 1 1 5FBAEC32
 P 12850 1500
 F 0 "SW28" H 12850 1755 50  0000 C CNN
@@ -993,7 +918,7 @@ F 3 "" H 12850 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW33
+L scatter42:SW_PUSH SW33
 U 1 1 5FBAEC38
 P 12850 2000
 F 0 "SW33" H 12850 2255 50  0000 C CNN
@@ -1004,7 +929,7 @@ F 3 "" H 12850 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW38
+L scatter42:SW_PUSH SW38
 U 1 1 5FBAEC3E
 P 12850 2500
 F 0 "SW38" H 12850 2755 50  0000 C CNN
@@ -1015,7 +940,7 @@ F 3 "" H 12850 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW24
+L scatter42:SW_PUSH SW24
 U 1 1 5FBAEC44
 P 13600 1000
 F 0 "SW24" H 13600 1255 50  0000 C CNN
@@ -1026,7 +951,7 @@ F 3 "" H 13600 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW29
+L scatter42:SW_PUSH SW29
 U 1 1 5FBAEC4A
 P 13600 1500
 F 0 "SW29" H 13600 1755 50  0000 C CNN
@@ -1037,7 +962,7 @@ F 3 "" H 13600 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW34
+L scatter42:SW_PUSH SW34
 U 1 1 5FBAEC50
 P 13600 2000
 F 0 "SW34" H 13600 2255 50  0000 C CNN
@@ -1048,7 +973,7 @@ F 3 "" H 13600 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW39
+L scatter42:SW_PUSH SW39
 U 1 1 5FBAEC56
 P 13600 2500
 F 0 "SW39" H 13600 2755 50  0000 C CNN
@@ -1059,7 +984,7 @@ F 3 "" H 13600 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW25
+L scatter42:SW_PUSH SW25
 U 1 1 5FBAEC5C
 P 14350 1000
 F 0 "SW25" H 14350 1255 50  0000 C CNN
@@ -1070,7 +995,7 @@ F 3 "" H 14350 1000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW30
+L scatter42:SW_PUSH SW30
 U 1 1 5FBAEC62
 P 14350 1500
 F 0 "SW30" H 14350 1755 50  0000 C CNN
@@ -1081,7 +1006,7 @@ F 3 "" H 14350 1500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW35
+L scatter42:SW_PUSH SW35
 U 1 1 5FBAEC68
 P 14350 2000
 F 0 "SW35" H 14350 2255 50  0000 C CNN
@@ -1092,7 +1017,7 @@ F 3 "" H 14350 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW40
+L scatter42:SW_PUSH SW40
 U 1 1 5FBAEC6E
 P 14350 2500
 F 0 "SW40" H 14350 2755 50  0000 C CNN
@@ -1103,7 +1028,7 @@ F 3 "" H 14350 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW41
+L scatter42:SW_PUSH SW41
 U 1 1 5FBAEC74
 P 15100 2500
 F 0 "SW41" H 15100 2755 50  0000 C CNN
@@ -1538,7 +1463,7 @@ F 3 "" H 8700 2600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW36
+L scatter42:SW_PUSH SW36
 U 1 1 5FBAEC0E
 P 11350 2500
 F 0 "SW36" H 11350 2755 50  0000 C CNN
@@ -1549,7 +1474,7 @@ F 3 "" H 11350 2500 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW31
+L scatter42:SW_PUSH SW31
 U 1 1 5FBAEC08
 P 11350 2000
 F 0 "SW31" H 11350 2255 50  0000 C CNN
@@ -1560,7 +1485,7 @@ F 3 "" H 11350 2000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L foostan_kbd:SW_PUSH SW26
+L scatter42:SW_PUSH SW26
 U 1 1 5FBAEC02
 P 11350 1500
 F 0 "SW26" H 11350 1755 50  0000 C CNN
@@ -1609,10 +1534,489 @@ Text GLabel 8475 950  0    50   Input ~ 0
 data_r
 Text GLabel 8800 2525 2    50   Input ~ 0
 data_r
-NoConn ~ 925  1250
-NoConn ~ 925  1350
-NoConn ~ 925  850 
-NoConn ~ 8475 850 
-NoConn ~ 8475 1250
-NoConn ~ 8475 1350
+NoConn ~ 2325 1950
+NoConn ~ 2325 1850
+NoConn ~ 925  1950
+NoConn ~ 925  1850
+Text GLabel 925  950  0    50   Input ~ 0
+data
+$Comp
+L scatter42:ProMicro U0
+U 1 1 5F8B01D8
+P 1625 1400
+F 0 "U0" H 1625 2237 60  0000 C CNN
+F 1 "ProMicro" H 1625 2131 60  0000 C CNN
+F 2 "scatter42:ProMicro_v3" H 1725 350 60  0001 C CNN
+F 3 "" H 1725 350 60  0000 C CNN
+	1    1625 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1150 800  1150
+Connection ~ 850  1150
+Wire Wire Line
+	850  1050 850  1150
+Wire Wire Line
+	925  1050 850  1050
+Wire Wire Line
+	925  1150 850  1150
+$Comp
+L power:GND #PWR0104
+U 1 1 5F95A90C
+P 800 1150
+F 0 "#PWR0104" H 800 900 50  0001 C CNN
+F 1 "GND" V 805 1022 50  0000 R CNN
+F 2 "" H 800 1150 50  0001 C CNN
+F 3 "" H 800 1150 50  0001 C CNN
+	1    800  1150
+	0    1    -1   0   
+$EndComp
+Text GLabel 925  1750 0    50   Input ~ 0
+row3
+Text GLabel 925  1650 0    50   Input ~ 0
+row2
+Text GLabel 925  1550 0    50   Input ~ 0
+row1
+Text GLabel 925  1450 0    50   Input ~ 0
+row0
+Text GLabel 2325 1250 2    50   Input ~ 0
+col0
+Text GLabel 2325 1350 2    50   Input ~ 0
+col1
+Text GLabel 2325 1450 2    50   Input ~ 0
+col2
+Text GLabel 2325 1550 2    50   Input ~ 0
+col3
+Text GLabel 2325 1650 2    50   Input ~ 0
+col4
+Text GLabel 2325 1750 2    50   Input ~ 0
+col5
+Text GLabel 2325 1050 2    50   Input ~ 0
+reset
+Wire Wire Line
+	2325 950  2475 950 
+NoConn ~ 2325 850 
+Wire Wire Line
+	2475 1150 2325 1150
+Text GLabel 925  1250 0    50   Input ~ 0
+SDA
+Text GLabel 925  1350 0    50   Input ~ 0
+SCL
+Text GLabel 3000 2375 2    50   Input ~ 0
+SDA
+Text GLabel 3000 2525 2    50   Input ~ 0
+SCL
+$Comp
+L scatter42:OLED OL0
+U 1 1 5FB0D933
+P 2250 2625
+F 0 "OL0" H 2167 3137 51  0000 C CNN
+F 1 "OLED" H 2167 3047 47  0000 C CNN
+F 2 "scatter42:OLED_v2" H 2250 2725 60  0001 C CNN
+F 3 "" H 2250 2725 60  0001 C CNN
+	1    2250 2625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2675 3100 2675
+Wire Wire Line
+	3100 2675 3100 2925
+Wire Wire Line
+	3000 2825 3175 2825
+$Comp
+L power:VCC #PWR0107
+U 1 1 5FB32EC7
+P 3100 2925
+F 0 "#PWR0107" H 3100 2775 50  0001 C CNN
+F 1 "VCC" H 3115 3098 50  0000 C CNN
+F 2 "" H 3100 2925 50  0001 C CNN
+F 3 "" H 3100 2925 50  0001 C CNN
+	1    3100 2925
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5FB377E4
+P 3175 2825
+F 0 "#PWR0108" H 3175 2575 50  0001 C CNN
+F 1 "GND" V 3180 2697 50  0000 R CNN
+F 2 "" H 3175 2825 50  0001 C CNN
+F 3 "" H 3175 2825 50  0001 C CNN
+	1    3175 2825
+	0    -1   -1   0   
+$EndComp
+Text GLabel 8475 1250 0    50   Input ~ 0
+SDA_r
+Text GLabel 8475 1350 0    50   Input ~ 0
+SCL_r
+Text GLabel 10625 2375 2    50   Input ~ 0
+SDA_r
+Text GLabel 10625 2525 2    50   Input ~ 0
+SCL_r
+$Comp
+L scatter42:OLED OL1
+U 1 1 5FB15361
+P 9875 2625
+F 0 "OL1" H 9792 3137 51  0000 C CNN
+F 1 "OLED" H 9792 3047 47  0000 C CNN
+F 2 "scatter42:OLED_v2" H 9875 2725 60  0001 C CNN
+F 3 "" H 9875 2725 60  0001 C CNN
+	1    9875 2625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10625 2675 10725 2675
+Wire Wire Line
+	10725 2675 10725 2950
+Wire Wire Line
+	10625 2825 10825 2825
+$Comp
+L power:GNDA #PWR0111
+U 1 1 5FB548AA
+P 10825 2825
+F 0 "#PWR0111" H 10825 2575 50  0001 C CNN
+F 1 "GNDA" V 10830 2697 50  0000 R CNN
+F 2 "" H 10825 2825 50  0001 C CNN
+F 3 "" H 10825 2825 50  0001 C CNN
+	1    10825 2825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR0112
+U 1 1 5FB599A1
+P 10725 2950
+F 0 "#PWR0112" H 10725 2800 50  0001 C CNN
+F 1 "VDD" H 10740 3123 50  0000 C CNN
+F 2 "" H 10725 2950 50  0001 C CNN
+F 3 "" H 10725 2950 50  0001 C CNN
+	1    10725 2950
+	1    0    0    1   
+$EndComp
+Text GLabel 925  850  0    50   Input ~ 0
+LED
+Text GLabel 8475 850  0    50   Input ~ 0
+LED_r
+NoConn ~ 3925 3525
+Wire Wire Line
+	4125 3525 3925 3525
+Wire Wire Line
+	4625 3725 4525 3725
+Wire Wire Line
+	4625 3525 4625 3725
+Wire Wire Line
+	4700 3525 4625 3525
+Wire Wire Line
+	5200 3725 5100 3725
+Wire Wire Line
+	5200 3525 5200 3725
+Wire Wire Line
+	5275 3525 5200 3525
+Wire Wire Line
+	5775 3725 5675 3725
+Wire Wire Line
+	5775 3525 5775 3725
+Wire Wire Line
+	5850 3525 5775 3525
+Wire Wire Line
+	6350 3725 6250 3725
+Wire Wire Line
+	6350 3525 6350 3725
+Wire Wire Line
+	6425 3525 6350 3525
+Wire Wire Line
+	7050 3725 6825 3725
+Text GLabel 7050 3725 2    50   Input ~ 0
+LED
+Wire Wire Line
+	4125 3900 4700 3900
+Connection ~ 4125 3900
+Wire Wire Line
+	4125 3725 4125 3900
+Wire Wire Line
+	4700 3900 5275 3900
+Connection ~ 4700 3900
+Wire Wire Line
+	4700 3725 4700 3900
+Wire Wire Line
+	5275 3900 5850 3900
+Connection ~ 5275 3900
+Wire Wire Line
+	3925 3900 4125 3900
+Wire Wire Line
+	5275 3725 5275 3900
+Wire Wire Line
+	5850 3900 6425 3900
+Connection ~ 5850 3900
+Wire Wire Line
+	5850 3725 5850 3900
+Wire Wire Line
+	6425 3900 6425 3725
+$Comp
+L power:GND #PWR0113
+U 1 1 5FE96135
+P 3925 3900
+F 0 "#PWR0113" H 3925 3650 50  0001 C CNN
+F 1 "GND" H 3930 3727 50  0000 C CNN
+F 2 "" H 3925 3900 50  0001 C CNN
+F 3 "" H 3925 3900 50  0001 C CNN
+	1    3925 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 3275 7050 3275
+Connection ~ 6825 3275
+Wire Wire Line
+	6825 3525 6825 3275
+Wire Wire Line
+	6250 3275 6825 3275
+Connection ~ 6250 3275
+Wire Wire Line
+	6250 3525 6250 3275
+Wire Wire Line
+	5675 3275 6250 3275
+Connection ~ 5675 3275
+Wire Wire Line
+	5100 3275 5675 3275
+Wire Wire Line
+	5675 3525 5675 3275
+Wire Wire Line
+	5100 3275 4525 3275
+Connection ~ 5100 3275
+Wire Wire Line
+	5100 3525 5100 3275
+Wire Wire Line
+	4525 3275 4525 3525
+$Comp
+L power:VCC #PWR0114
+U 1 1 5FE66D97
+P 7050 3275
+F 0 "#PWR0114" H 7050 3125 50  0001 C CNN
+F 1 "VCC" H 7065 3448 50  0000 C CNN
+F 2 "" H 7050 3275 50  0001 C CNN
+F 3 "" H 7050 3275 50  0001 C CNN
+	1    7050 3275
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED4
+U 1 1 5FE58F1B
+P 4325 3625
+F 0 "LED4" H 4325 3887 51  0000 C CNN
+F 1 "SK6812MINI" H 4325 3822 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 4325 3625 60  0001 C CNN
+F 3 "" H 4325 3625 60  0001 C CNN
+	1    4325 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED3
+U 1 1 5FE58051
+P 4900 3625
+F 0 "LED3" H 4900 3887 51  0000 C CNN
+F 1 "SK6812MINI" H 4900 3822 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 4900 3625 60  0001 C CNN
+F 3 "" H 4900 3625 60  0001 C CNN
+	1    4900 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED2
+U 1 1 5FE57133
+P 5475 3625
+F 0 "LED2" H 5475 3887 51  0000 C CNN
+F 1 "SK6812MINI" H 5475 3822 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 5475 3625 60  0001 C CNN
+F 3 "" H 5475 3625 60  0001 C CNN
+	1    5475 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED1
+U 1 1 5FE561A3
+P 6050 3625
+F 0 "LED1" H 6050 3887 51  0000 C CNN
+F 1 "SK6812MINI" H 6050 3822 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 6050 3625 60  0001 C CNN
+F 3 "" H 6050 3625 60  0001 C CNN
+	1    6050 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED0
+U 1 1 5FE3D5AF
+P 6625 3625
+F 0 "LED0" H 6625 3887 51  0000 C CNN
+F 1 "SK6812MINI" H 6625 3822 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 6625 3625 60  0001 C CNN
+F 3 "" H 6625 3625 60  0001 C CNN
+	1    6625 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F943AE7
+P 1450 3500
+F 0 "#PWR0103" H 1450 3250 50  0001 C CNN
+F 1 "GND" H 1455 3327 50  0000 C CNN
+F 2 "" H 1450 3500 50  0001 C CNN
+F 3 "" H 1450 3500 50  0001 C CNN
+	1    1450 3500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 11500 3500
+Wire Wire Line
+	11700 3500 11500 3500
+Wire Wire Line
+	12200 3700 12100 3700
+Wire Wire Line
+	12200 3500 12200 3700
+Wire Wire Line
+	12275 3500 12200 3500
+Wire Wire Line
+	12775 3700 12675 3700
+Wire Wire Line
+	12775 3500 12775 3700
+Wire Wire Line
+	12850 3500 12775 3500
+Wire Wire Line
+	13350 3700 13250 3700
+Wire Wire Line
+	13350 3500 13350 3700
+Wire Wire Line
+	13425 3500 13350 3500
+Wire Wire Line
+	13925 3700 13825 3700
+Wire Wire Line
+	13925 3500 13925 3700
+Wire Wire Line
+	14000 3500 13925 3500
+Wire Wire Line
+	14625 3700 14400 3700
+Text GLabel 14625 3700 2    50   Input ~ 0
+LED_r
+Wire Wire Line
+	11700 3875 12275 3875
+Connection ~ 11700 3875
+Wire Wire Line
+	11700 3700 11700 3875
+Wire Wire Line
+	12275 3875 12850 3875
+Connection ~ 12275 3875
+Wire Wire Line
+	12275 3700 12275 3875
+Wire Wire Line
+	12850 3875 13425 3875
+Connection ~ 12850 3875
+Wire Wire Line
+	11500 3875 11700 3875
+Wire Wire Line
+	12850 3700 12850 3875
+Wire Wire Line
+	13425 3875 14000 3875
+Connection ~ 13425 3875
+Wire Wire Line
+	13425 3700 13425 3875
+Wire Wire Line
+	14000 3875 14000 3700
+Wire Wire Line
+	14400 3250 14625 3250
+Connection ~ 14400 3250
+Wire Wire Line
+	14400 3500 14400 3250
+Wire Wire Line
+	13825 3250 14400 3250
+Connection ~ 13825 3250
+Wire Wire Line
+	13825 3500 13825 3250
+Wire Wire Line
+	13250 3250 13825 3250
+Connection ~ 13250 3250
+Wire Wire Line
+	12675 3250 13250 3250
+Wire Wire Line
+	13250 3500 13250 3250
+Wire Wire Line
+	12675 3250 12100 3250
+Connection ~ 12675 3250
+Wire Wire Line
+	12675 3500 12675 3250
+Wire Wire Line
+	12100 3250 12100 3500
+$Comp
+L scatter42:SK6812MINI LED9
+U 1 1 5FF69DB2
+P 11900 3600
+F 0 "LED9" H 11900 3862 51  0000 C CNN
+F 1 "SK6812MINI" H 11900 3797 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 11900 3600 60  0001 C CNN
+F 3 "" H 11900 3600 60  0001 C CNN
+	1    11900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED8
+U 1 1 5FF69DBC
+P 12475 3600
+F 0 "LED8" H 12475 3862 51  0000 C CNN
+F 1 "SK6812MINI" H 12475 3797 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 12475 3600 60  0001 C CNN
+F 3 "" H 12475 3600 60  0001 C CNN
+	1    12475 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED7
+U 1 1 5FF69DC6
+P 13050 3600
+F 0 "LED7" H 13050 3862 51  0000 C CNN
+F 1 "SK6812MINI" H 13050 3797 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 13050 3600 60  0001 C CNN
+F 3 "" H 13050 3600 60  0001 C CNN
+	1    13050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED6
+U 1 1 5FF69DD0
+P 13625 3600
+F 0 "LED6" H 13625 3862 51  0000 C CNN
+F 1 "SK6812MINI" H 13625 3797 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 13625 3600 60  0001 C CNN
+F 3 "" H 13625 3600 60  0001 C CNN
+	1    13625 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L scatter42:SK6812MINI LED5
+U 1 1 5FF69DDA
+P 14200 3600
+F 0 "LED5" H 14200 3862 51  0000 C CNN
+F 1 "SK6812MINI" H 14200 3797 16  0000 C CNN
+F 2 "scatter42:SK6812MINI_underglow_rev" H 14200 3600 60  0001 C CNN
+F 3 "" H 14200 3600 60  0001 C CNN
+	1    14200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0120
+U 1 1 5FF8605D
+P 14625 3250
+F 0 "#PWR0120" H 14625 3100 50  0001 C CNN
+F 1 "VDD" H 14640 3423 50  0000 C CNN
+F 2 "" H 14625 3250 50  0001 C CNN
+F 3 "" H 14625 3250 50  0001 C CNN
+	1    14625 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0122
+U 1 1 5FF91626
+P 11500 3875
+F 0 "#PWR0122" H 11500 3625 50  0001 C CNN
+F 1 "GNDA" H 11505 3702 50  0000 C CNN
+F 2 "" H 11500 3875 50  0001 C CNN
+F 3 "" H 11500 3875 50  0001 C CNN
+	1    11500 3875
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
