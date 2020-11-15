@@ -134,7 +134,16 @@ ProMicro(マイコン)をハンダ付けしていきます。ProMicroにより�
 ## 12. トッププレートのネジ止め および キーキャップの取り付け
 前工程でできたPCBをボトムプレートにのせてネジ止めします。その後キーキャップを取り付けます。
 
-## 13. 完成！
+## 13. ハードウェア完成！
 ![IMG_0426](https://user-images.githubusercontent.com/15024038/99160832-ee01b400-272e-11eb-99b0-fb7d9864ee7b.jpg)
 
 ![IMG_0428](https://user-images.githubusercontent.com/15024038/99160835-f0640e00-272e-11eb-9290-88b7ac1be8d7.jpg)
+
+## 14. ファームウェアのビルドとインストール
+[QMK](https://qmk.fm/ja/)をお手元のPCにインストールし、 `qmk_firmware/keyboards` ディレクトリの下に、本リポジトリの`qmk_firmware/keyboards/scatter42`ディレクトリを配置します。その後以下のコマンドを実行します。
+
+```
+qmk compile -kb scatter42 -km default
+```
+
+すると、 `qmk_firmware/.build/scatter42_default.hex` というファイルが生成されます。これがScatter42のファームウェアとなります。このファームウェアを[QMK Toolbox](https://qmk.fm/ja/toolbox/)を利用して、左右のProMicro両方に書き込んでください。
