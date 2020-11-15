@@ -8,7 +8,7 @@ Scatter42のキットには以下の部品が封入されておりますので�
     - ボトム用 ... 左右 1枚ずつ
     - ProMicro保護用 ... 左右1枚ずつ
 - ProMicro ... 2つ
-- コンスルー ... 2つ
+- コンスルー ... 2セット
 - TRRSジャック ... 2つ
 - タクトスイッチ ... 2つ
 - PCBソケット
@@ -71,7 +71,7 @@ PCBソケットをハンダ付けする際は以下のような工程を踏む�
 
 1. ハンダ付け対象のPCBソケットに対応するPCB上のパッド全てにハンダをのせます。
 2. 手でPCBソケットをつまみ、PCB上の対応するシルク上にのせます。
-3. PCBソケット全てに対し、片側の端子をハンダごてで強めに押して温め、ハンダ付けします。
+3. PCBソケット全てに対し、ピンセットで押さえながら片側の端子をハンダごてで強めに押して温め、ハンダ付けします。
 4. もう片方の端子を同様にハンダ付けします。
 
 MXスイッチ用のみを実装すると以下のようになればokです。
@@ -140,10 +140,22 @@ ProMicro(マイコン)をハンダ付けしていきます。ProMicroにより�
 ![IMG_0428](https://user-images.githubusercontent.com/15024038/99160835-f0640e00-272e-11eb-9290-88b7ac1be8d7.jpg)
 
 ## 14. ファームウェアのビルドとインストール
-[QMK](https://qmk.fm/ja/)をお手元のPCにインストールし、 `qmk_firmware/keyboards` ディレクトリの下に、本リポジトリの`qmk_firmware/keyboards/scatter42`ディレクトリを配置します。その後以下のコマンドを実行します。
+最後にProMicroにファームウェアをインストールする必要があります。Scatter42では本GitHubリポジトリに、作者が運用しているキーマップが記載されたファームウェアが同梱されています。
+
+作者が運用しているキーマップは以下のとおりです。
+
+![scatter42-keymap](https://user-images.githubusercontent.com/15024038/99190629-e54ec380-27aa-11eb-9f9c-40c499578908.png)
+
+こちらのキーマップで慣れてみようという方は、以下の場所にすでにビルド済みのファームウェアファイルが配置されているため、ファームウェアのビルドは必要ありません。
+
+[https://github.com/bbrfkr/keyboards/releases/tag/v1.2.0](https://github.com/bbrfkr/keyboards/releases/tag/v1.2.0)
+
+独自のキーマップを定義したい方は、ファームウェアを修正する必要があります。ファームウェアは `qmk_firmware/keyboards/scatter42` ディレクトリに配備されていますので、必要な修正を行います。その後、[QMK](https://qmk.fm/ja/)をお手元のPCにインストールし、 `qmk_firmware/keyboards` ディレクトリの下に、本リポジトリの`qmk_firmware/keyboards/scatter42`ディレクトリを配置します。その後以下のコマンドを実行します。
 
 ```
 qmk compile -kb scatter42 -km default
 ```
 
-すると、 `qmk_firmware/.build/scatter42_default.hex` というファイルが生成されます。これがScatter42のファームウェアとなります。このファームウェアを[QMK Toolbox](https://qmk.fm/ja/toolbox/)を利用して、左右のProMicro両方に書き込んでください。
+すると、 `qmk_firmware/.build/scatter42_default.hex` というファイルが生成されます。これがScatter42のファームウェアとなります。
+
+ファームウェアを取得できたら、[QMK Toolbox](https://qmk.fm/ja/toolbox/)を利用して、左右のProMicro両方に書き込んでください。
