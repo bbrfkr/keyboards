@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name scatter42)(type Legacy)(uri C:/Users/tatsunori/workspaces/github-com/keyboards/scatter42/scatter42.lib)(options "")(descr ""))
+  (lib (name scatter42-rescue)(type Legacy)(uri ${KIPRJMOD}/scatter42-rescue.lib)(options "")(descr ""))
 )
