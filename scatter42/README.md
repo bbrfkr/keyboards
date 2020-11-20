@@ -11,6 +11,8 @@ Scatter42は以下の特徴を持つ、40%キーボードです。
 
 ![scatter-pcb-back](https://user-images.githubusercontent.com/15024038/99071579-be9b5c00-25f5-11eb-9be5-e315bb955328.png)
 
+ビルドガイドは[こちら](https://github.com/bbrfkr/keyboards/blob/v1.2.0/scatter42/BUILDGUIDE.md)
+
 ## SU120での試作機
 本キーボードは試作段階で [@e3w2q](https://github.com/e3w2q) さんの [SU120](https://e3w2q.github.io/9/) を利用させていただいてます。ありがとうございます :bow:
 
