@@ -8,4 +8,5 @@ Quantumは以下の特徴を持つ、35%キーボードです。
 - アンダーグローLEDおよび、OLEDに対応
 
 ## 最新バージョン基板
-![quantum-pcb](https://user-images.githubusercontent.com/15024038/98453739-ed51a680-219f-11eb-8164-7780ea23ad7b.png)
+![quantum-pcb](https://user-images.githubusercontent.com/15024038/101244141-053d2b80-3748-11eb-888b-4d1f3d733dd8.png)
+![quantum-pcb-back](https://user-images.githubusercontent.com/15024038/101244148-14bc7480-3748-11eb-8c15-cd97232d575c.png)
