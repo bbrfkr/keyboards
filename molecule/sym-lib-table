@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name adns-9800)(type Legacy)(uri C:/Users/tatsunori/workspaces/github-com/keyboards/molecule/ADNS-9800_-_v2.1-eagle-import.lib)(options "")(descr ""))
+  (lib (name molecule)(type Legacy)(uri ${KIPRJMOD}/molecule.lib)(options "")(descr ""))
+)

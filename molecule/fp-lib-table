@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "ADNS-9800 - v2.1")(type KiCad)(uri "$(KIPRJMOD)/ADNS-9800 - v2.1.pretty")(options "")(descr ""))
+  (lib (name molecule)(type KiCad)(uri "$(KIPRJMOD)/molecule.pretty")(options "")(descr ""))
+)
