@@ -23,10 +23,14 @@ void adns_write(uint8_t reg_addr, uint8_t data);
 
 uint8_t adns_read(uint8_t reg_addr);
 
-void pointing_device_init(void);
 
 int16_t convertDeltaToInt(uint8_t high, uint8_t low);
 
-void readSensor(void);
+struct _motion_delta {
+    int16_t delta_x;
+    int16_t delta_y;
+    int8_t motion_ind;
+};
+typedef struct _motion_delta motion_delta_t;
 
-void pointing_device_task(void);
+motion_delta_t readSensor(void);
