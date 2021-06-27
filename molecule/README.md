@@ -9,5 +9,10 @@ moleculeは以下の特徴を持つ、40%キーボードです。
 ## 最新バージョン
 [![IMG_0583](https://user-images.githubusercontent.com/15024038/115101532-fc732680-9f7f-11eb-9718-3cd48567de03.jpg)](https://i.imgur.com/uYCeS4Y.jpg)
 
+## キーマップ
+デフォルトで書き込まれているキーマップは以下のPDFの通りになります。また、[QMK Configurator](https://config.qmk.fm/#/molecule/LAYOUT)を用いて、キーマップをカスタマイズすることが可能です。
+
+- [molecule デフォルトキーマップ](https://github.com/bbrfkr/keyboards/blob/master/molecule/molecule-default-keymap.pdf)
+
 ## 謝辞
 本プロジェクトは[aball](https://github.com/brickbots/aball)プロジェクトから無制限利用許諾をいただき、部分的に当プロジェクト内容を含んでおります。この場を借りて御礼申し上げます。
