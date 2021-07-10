@@ -1,0 +1,157 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 74LVC1T45GW,125-eec
+#
+DEF 74LVC1T45GW,125-eec U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "74LVC1T45GW,125-eec" 0 300 50 H V L CNN
+F2 "Nexperia-SOT363-11_2018-0-*" 0 400 50 H I L CNN
+F3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" 0 500 50 H I L CNN
+F4 "+125°C" 0 600 50 H I L CNN "ambient temperature range high"
+F5 "-40°C" 0 700 50 H I L CNN "ambient temperature range low"
+F6 "No" 0 800 50 H I L CNN "automotive"
+F7 "IC" 0 900 50 H I L CNN "category"
+F8 "Integrated Circuits (ICs)" 0 1000 50 H I L CNN "device class L1"
+F9 "Logic ICs" 0 1100 50 H I L CNN "device class L2"
+F10 "Drivers and Transceivers" 0 1200 50 H I L CNN "device class L3"
+F11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" 0 1300 50 H I L CNN "digikey description"
+F12 "1727-4560-1-ND" 0 1400 50 H I L CNN "digikey part number"
+F13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" 0 1500 50 H I L CNN "footprint url"
+F14 "1.1mm" 0 1600 50 H I L CNN "height"
+F15 "Yes" 0 1700 50 H I L CNN "lead free"
+F16 "2d660f43f9fba5f8" 0 1800 50 H I L CNN "library id"
+F17 "Non-Inverting" 0 1900 50 H I L CNN "logic function"
+F18 "Non-Inverting" 0 2000 50 H I L CNN "logic function desc"
+F19 "Nexperia" 0 2100 50 H I L CNN "manufacturer"
+F20 "5.5V" 0 2200 50 H I L CNN "max supply voltage"
+F21 "1.2V" 0 2300 50 H I L CNN "min supply voltage"
+F22 "771-74LVC1T45GW125" 0 2400 50 H I L CNN "mouser part number"
+F23 "2-75uA" 0 2500 50 H I L CNN "nominal supply current"
+F24 "1" 0 2600 50 H I L CNN "number of circuits"
+F25 "1" 0 2700 50 H I L CNN "number of inputs"
+F26 "1" 0 2800 50 H I L CNN "number of outputs"
+F27 "SOT363" 0 2900 50 H I L CNN "package"
+F28 "2.5ns" 0 3000 50 H I L CNN "propagation delay"
+F29 "Yes" 0 3100 50 H I L CNN "rohs"
+F30 "+125°C" 0 3200 50 H I L CNN "temperature range high"
+F31 "-40°C" 0 3300 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1400 -500 1 1 0 f
+X VCC(A) 1 100 0 100 R 40 40 1 1 W
+X GND 2 1500 -400 100 L 40 40 1 1 W
+X A 3 100 -400 100 R 40 40 1 1 B
+X B 4 1500 -200 100 L 40 40 1 1 B
+X DIR 5 100 -200 100 R 40 40 1 1 I
+X VCC(B) 6 1500 0 100 L 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# PMW3360DM-T2QU-PMW3360DM-T2QU
+#
+DEF PMW3360DM-T2QU-PMW3360DM-T2QU U 0 30 Y Y 1 F N
+F0 "U" 1150 300 50 H V L CNN
+F1 "PMW3360DM-T2QU-PMW3360DM-T2QU" 1150 200 50 H V L CNN
+F2 "PMW3360" 1150 100 50 H I L CNN
+F3 "http://www.pixart.com.tw/upload/PMS0058-PMW3360DM-T2QU-NNDS-R1.30-06042016_20160902201411.pdf" 1150 0 50 H I L CNN
+F4 "Optical gaming navigation sensor" 1150 -100 50 H I L CNN "Description"
+F5 "PixArt Imaging Inc." 1150 -300 50 H I L CNN "Manufacturer_Name"
+F6 "PMW3360DM-T2QU" 1150 -400 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 5 0 1 6 200 100 1100 100 1100 -800 200 -800 200 100 N
+X NC_1 1 1300 -700 200 L 50 50 0 0 P
+X SCLK 10 0 -100 200 R 50 50 0 0 P
+X MOSI 11 0 -200 200 R 50 50 0 0 P
+X MISO 12 0 -300 200 R 50 50 0 0 P
+X NCS 13 0 -400 200 R 50 50 0 0 P
+X NC_4 14 0 -500 200 R 50 50 0 0 P
+X LED_P 15 0 -600 200 R 50 50 0 0 P
+X NC_5 16 0 -700 200 R 50 50 0 0 P
+X NC_2 2 1300 -600 200 L 50 50 0 0 P
+X VDDPIX 3 1300 -500 200 L 50 50 0 0 P
+X VDD 4 1300 -400 200 L 50 50 0 0 P
+X VDDIO 5 1300 -300 200 L 50 50 0 0 P
+X NC_3 6 1300 -200 200 L 50 50 0 0 P
+X NRESET 7 1300 -100 200 L 50 50 0 0 P
+X GND 8 1300 0 200 L 50 50 0 0 P
+X MOTION 9 0 0 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# SW_PUSH-kbd
+#
+DEF SW_PUSH-kbd SW 0 40 N N 1 F N
+F0 "SW" 150 110 50 H V C CNN
+F1 "SW_PUSH-kbd" 0 -80 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+S -170 50 170 60 0 1 0 N
+P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
+X 1 1 -300 0 200 R 50 50 0 1 P I
+X 2 2 300 0 200 L 50 50 0 1 P I
+ENDDRAW
+ENDDEF
+#
+# TLV70019DDCR-TLV70019DDCR
+#
+DEF TLV70019DDCR-TLV70019DDCR U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "TLV70019DDCR-TLV70019DDCR" 0 300 50 H V L CNN
+F2 "Texas_Instruments-TLV70019DDCR-*" 0 400 50 H I L CNN
+F3 "http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=TLV70019&fileType=pdf" 0 500 50 H I L CNN
+F4 "2" 0 600 50 H I L CNN "Accuracy"
+F5 "MO-193" 0 700 50 H I L CNN "Code  JEDEC"
+F6 "Manufacturer URL" 0 800 50 H I L CNN "Component Link 1 Description"
+F7 "http://www.ti.com/" 0 900 50 H I L CNN "Component Link 1 URL"
+F8 "Package Specification" 0 1000 50 H I L CNN "Component Link 3 Description"
+F9 "http://www.ti.com/litv/pdf/mpds123d" 0 1100 50 H I L CNN "Component Link 3 URL"
+F10 "SLVSA00D" 0 1200 50 H I L CNN "Datasheet Version"
+F11 "1.9" 0 1300 50 H I L CNN "Fixed Output OptionsV"
+F12 "0.2" 0 1400 50 H I L CNN "Iout Max A"
+F13 "0.03" 0 1500 50 H I L CNN "Iq Typm A"
+F14 "Surface Mount" 0 1600 50 H I L CNN "Mounting Technology"
+F15 "5-Pin Plastic Small Outline, Body 2.9 x 1.6 mm, 0.95 mm Pitch" 0 1700 50 H I L CNN "Package Description"
+F16 "4204403-2/E" 0 1800 50 H I L CNN "Package Version"
+F17 "Single Channel LDO" 0 1900 50 H I L CNN "Sub Family"
+F18 "175" 0 2000 50 H I L CNN "Vdo Typm V"
+F19 "5.5" 0 2100 50 H I L CNN "Vin Max V"
+F20 "2" 0 2200 50 H I L CNN "Vin Min V"
+F21 "1.9" 0 2300 50 H I L CNN "Vout AdjMaxV"
+F22 "1.9" 0 2400 50 H I L CNN "Vout AdjMinV"
+F23 "IC" 0 2500 50 H I L CNN "category"
+F24 "3258691" 0 2600 50 H I L CNN "ciiva ids"
+F25 "cd49f8ad7f5d1360" 0 2700 50 H I L CNN "library id"
+F26 "Texas Instruments" 0 2800 50 H I L CNN "manufacturer"
+F27 "DDC0005A" 0 2900 50 H I L CNN "package"
+F28 "1464593191" 0 3000 50 H I L CNN "release date"
+F29 "Yes" 0 3100 50 H I L CNN "rohs"
+F30 "6830DAB3-6FB8-4394-9602-C968B9D2D2A4" 0 3200 50 H I L CNN "vault revision"
+F31 "yes" 0 3300 50 H I L CNN "imported"
+DRAW
+S 200 100 800 -400 1 1 0 f
+X IN 1 100 0 100 R 40 40 1 1 W
+X GND 2 500 -500 100 U 40 40 1 1 W
+X EN 3 100 -200 100 R 40 40 1 1 I
+X NC 4 900 -200 100 L 40 40 1 1 P
+X OUT 5 900 0 100 L 40 40 1 1 W
+ENDDRAW
+ENDDEF
+#
+# YS-SK6812MINI-E-kbd
+#
+DEF YS-SK6812MINI-E-kbd LED 0 40 Y Y 1 F N
+F0 "LED" 100 -300 29 H V C CNN
+F1 "YS-SK6812MINI-E-kbd" 250 -250 29 H V C CNN
+F2 "" 100 -250 50 H I C CNN
+F3 "" 100 -250 50 H I C CNN
+DRAW
+S -200 200 200 -200 0 1 10 f
+X VDD 1 0 300 100 D 50 39 1 1 W
+X DOUT 2 300 0 100 L 50 39 1 1 O
+X VSS 3 0 -300 100 U 50 39 1 1 W
+X DIN 4 -300 0 100 R 50 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

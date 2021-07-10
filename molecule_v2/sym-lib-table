@@ -1,0 +1,9 @@
+(sym_lib_table
+  (lib (name molecule_v2-rescue)(type Legacy)(uri ${KIPRJMOD}/molecule_v2-rescue.lib)(options "")(descr ""))
+  (lib (name PMW3360DM-T2QU)(type Legacy)(uri C:/Users/tatsunori/workspaces/for-keyboards/LIB_PMW3360DM-T2QU/PMW3360DM-T2QU/KiCad/PMW3360DM-T2QU.lib)(options "")(descr ""))
+  (lib (name TLV70019DDCR)(type Legacy)(uri "C:/Users/tatsunori/workspaces/for-keyboards/IC_Texas Instruments_TLV70019DDCR/eec.lib")(options "")(descr ""))
+  (lib (name 74LVC1T45GW)(type Legacy)(uri C:/Users/tatsunori/workspaces/for-keyboards/IC_Nexperia_74LVC1T45GW,125/eec.lib)(options "")(descr ""))
+  (lib (name keebio)(type Legacy)(uri C:/Users/tatsunori/workspaces/for-keyboards/keebio-components/keebio.lib)(options "")(descr ""))
+  (lib (name kbd)(type Legacy)(uri C:/Users/tatsunori/workspaces/for-keyboards/kbd/kicad-symbols/kbd.lib)(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type Legacy)(uri "C:/Users/tatsunori/workspaces/for-keyboards/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
+)
