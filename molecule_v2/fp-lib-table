@@ -6,4 +6,5 @@
   (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/Keebio-Parts.pretty)(options "")(descr ""))
   (lib (name random-keyboard-parts)(type KiCad)(uri ${KIPRJMOD}/random-keyboard-parts.pretty)(options "")(descr ""))
   (lib (name molecule-logo)(type KiCad)(uri ${KIPRJMOD}/molecule-logo.pretty)(options "")(descr ""))
+  (lib (name TS-1187A-B-A-B)(type KiCad)(uri ${KIPRJMOD}/TS-1187A-B-A-B)(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-update=2021/06/27 16:00:04
+update=2021/08/29 20:56:31
 version=1
 last_client=kicad
 [general]
@@ -25,10 +25,10 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=molecule_v2.net
 CopperLayerCount=2
 BoardThickness=1.6
-AllowMicroVias=1
+AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
@@ -69,7 +69,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0

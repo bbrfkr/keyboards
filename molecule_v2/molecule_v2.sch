@@ -100,45 +100,45 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 60D3B329
-P 9775 3800
-F 0 "#PWR0103" H 9775 3550 50  0001 C CNN
-F 1 "GND" H 9780 3627 50  0000 C CNN
-F 2 "" H 9775 3800 50  0001 C CNN
-F 3 "" H 9775 3800 50  0001 C CNN
-	1    9775 3800
+P 9950 3800
+F 0 "#PWR0103" H 9950 3550 50  0001 C CNN
+F 1 "GND" H 9955 3627 50  0000 C CNN
+F 2 "" H 9950 3800 50  0001 C CNN
+F 3 "" H 9950 3800 50  0001 C CNN
+	1    9950 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 60D3B920
-P 9775 3800
-F 0 "#FLG0101" H 9775 3875 50  0001 C CNN
-F 1 "PWR_FLAG" H 9775 3973 50  0000 C CNN
-F 2 "" H 9775 3800 50  0001 C CNN
-F 3 "~" H 9775 3800 50  0001 C CNN
-	1    9775 3800
+P 9950 3800
+F 0 "#FLG0101" H 9950 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 9950 3973 50  0000 C CNN
+F 2 "" H 9950 3800 50  0001 C CNN
+F 3 "~" H 9950 3800 50  0001 C CNN
+	1    9950 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 60D3BE95
-P 9350 3800
-F 0 "#FLG0102" H 9350 3875 50  0001 C CNN
-F 1 "PWR_FLAG" H 9350 3973 50  0000 C CNN
-F 2 "" H 9350 3800 50  0001 C CNN
-F 3 "~" H 9350 3800 50  0001 C CNN
-	1    9350 3800
+P 9525 3800
+F 0 "#FLG0102" H 9525 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 9525 3973 50  0000 C CNN
+F 2 "" H 9525 3800 50  0001 C CNN
+F 3 "~" H 9525 3800 50  0001 C CNN
+	1    9525 3800
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:VCC #PWR0104
 U 1 1 60D364DB
-P 9350 3800
-F 0 "#PWR0104" H 9350 3650 50  0001 C CNN
-F 1 "VCC" H 9365 3973 50  0000 C CNN
-F 2 "" H 9350 3800 50  0001 C CNN
-F 3 "" H 9350 3800 50  0001 C CNN
-	1    9350 3800
+P 9525 3800
+F 0 "#PWR0104" H 9525 3650 50  0001 C CNN
+F 1 "VCC" H 9540 3973 50  0000 C CNN
+F 2 "" H 9525 3800 50  0001 C CNN
+F 3 "" H 9525 3800 50  0001 C CNN
+	1    9525 3800
 	1    0    0    -1  
 $EndComp
 Text GLabel 7975 3875 0    50   Input ~ 0
@@ -156,22 +156,10 @@ F 3 "" H 8700 3875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7975 3875 8100 3875
-$Comp
-L molecule_v2-rescue:SW_PUSH-kbd RESET_SW0
-U 1 1 60DD03A2
-P 8400 3875
-F 0 "RESET_SW0" H 8400 4130 50  0000 C CNN
-F 1 "SW_PUSH" H 8400 4039 50  0000 C CNN
-F 2 "Keebio-Parts:SW_Tactile_SPST_Angled_MJTP1117" H 8400 3875 50  0001 C CNN
-F 3 "" H 8400 3875 50  0000 C CNN
-	1    8400 3875
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8100 3875 8100 4100
-Connection ~ 8100 3875
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW0
+L kbd:SW_PUSH SW0
 U 1 1 60D254B6
 P 1350 8550
 F 0 "SW0" H 1350 8805 50  0000 C CNN
@@ -193,7 +181,7 @@ F 3 "~" H 1650 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW10
+L kbd:SW_PUSH SW10
 U 1 1 60DD051D
 P 1350 9275
 F 0 "SW10" H 1350 9530 50  0000 C CNN
@@ -215,7 +203,7 @@ F 3 "~" H 1650 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW20
+L kbd:SW_PUSH SW20
 U 1 1 60DD1F1F
 P 1350 10000
 F 0 "SW20" H 1350 10255 50  0000 C CNN
@@ -237,7 +225,7 @@ F 3 "~" H 1650 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW30
+L kbd:SW_PUSH SW30
 U 1 1 60DD1F2B
 P 1350 10725
 F 0 "SW30" H 1350 10980 50  0000 C CNN
@@ -259,7 +247,7 @@ F 3 "~" H 1650 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW1
+L kbd:SW_PUSH SW1
 U 1 1 60DDB90D
 P 2475 8550
 F 0 "SW1" H 2475 8805 50  0000 C CNN
@@ -281,7 +269,7 @@ F 3 "~" H 2775 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW11
+L kbd:SW_PUSH SW11
 U 1 1 60DDB919
 P 2475 9275
 F 0 "SW11" H 2475 9530 50  0000 C CNN
@@ -303,7 +291,7 @@ F 3 "~" H 2775 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW21
+L kbd:SW_PUSH SW21
 U 1 1 60DDB925
 P 2475 10000
 F 0 "SW21" H 2475 10255 50  0000 C CNN
@@ -325,7 +313,7 @@ F 3 "~" H 2775 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW31
+L kbd:SW_PUSH SW31
 U 1 1 60DDB931
 P 2475 10725
 F 0 "SW31" H 2475 10980 50  0000 C CNN
@@ -347,7 +335,7 @@ F 3 "~" H 2775 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW2
+L kbd:SW_PUSH SW2
 U 1 1 60DE54E9
 P 3525 8550
 F 0 "SW2" H 3525 8805 50  0000 C CNN
@@ -369,7 +357,7 @@ F 3 "~" H 3825 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW12
+L kbd:SW_PUSH SW12
 U 1 1 60DE54F5
 P 3525 9275
 F 0 "SW12" H 3525 9530 50  0000 C CNN
@@ -391,7 +379,7 @@ F 3 "~" H 3825 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW22
+L kbd:SW_PUSH SW22
 U 1 1 60DE5501
 P 3525 10000
 F 0 "SW22" H 3525 10255 50  0000 C CNN
@@ -413,7 +401,7 @@ F 3 "~" H 3825 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW32
+L kbd:SW_PUSH SW32
 U 1 1 60DE550D
 P 3525 10725
 F 0 "SW32" H 3525 10980 50  0000 C CNN
@@ -435,7 +423,7 @@ F 3 "~" H 3825 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW3
+L kbd:SW_PUSH SW3
 U 1 1 60DE5525
 P 4650 8550
 F 0 "SW3" H 4650 8805 50  0000 C CNN
@@ -457,7 +445,7 @@ F 3 "~" H 4950 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW13
+L kbd:SW_PUSH SW13
 U 1 1 60DE5531
 P 4650 9275
 F 0 "SW13" H 4650 9530 50  0000 C CNN
@@ -479,7 +467,7 @@ F 3 "~" H 4950 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW23
+L kbd:SW_PUSH SW23
 U 1 1 60DE553D
 P 4650 10000
 F 0 "SW23" H 4650 10255 50  0000 C CNN
@@ -501,7 +489,7 @@ F 3 "~" H 4950 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW33
+L kbd:SW_PUSH SW33
 U 1 1 60DE5549
 P 4650 10725
 F 0 "SW33" H 4650 10980 50  0000 C CNN
@@ -523,7 +511,7 @@ F 3 "~" H 4950 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW4
+L kbd:SW_PUSH SW4
 U 1 1 60DF9B87
 P 5775 8550
 F 0 "SW4" H 5775 8805 50  0000 C CNN
@@ -545,7 +533,7 @@ F 3 "~" H 6075 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW14
+L kbd:SW_PUSH SW14
 U 1 1 60DF9B93
 P 5775 9275
 F 0 "SW14" H 5775 9530 50  0000 C CNN
@@ -567,7 +555,7 @@ F 3 "~" H 6075 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW24
+L kbd:SW_PUSH SW24
 U 1 1 60DF9B9F
 P 5775 10000
 F 0 "SW24" H 5775 10255 50  0000 C CNN
@@ -589,7 +577,7 @@ F 3 "~" H 6075 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW34
+L kbd:SW_PUSH SW34
 U 1 1 60DF9BAB
 P 5775 10725
 F 0 "SW34" H 5775 10980 50  0000 C CNN
@@ -611,7 +599,7 @@ F 3 "~" H 6075 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW5
+L kbd:SW_PUSH SW5
 U 1 1 60DF9BC3
 P 6900 8550
 F 0 "SW5" H 6900 8805 50  0000 C CNN
@@ -633,7 +621,7 @@ F 3 "~" H 7200 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW15
+L kbd:SW_PUSH SW15
 U 1 1 60DF9BCF
 P 6900 9275
 F 0 "SW15" H 6900 9530 50  0000 C CNN
@@ -655,7 +643,7 @@ F 3 "~" H 7200 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW25
+L kbd:SW_PUSH SW25
 U 1 1 60DF9BDB
 P 6900 10000
 F 0 "SW25" H 6900 10255 50  0000 C CNN
@@ -677,7 +665,7 @@ F 3 "~" H 7200 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW35
+L kbd:SW_PUSH SW35
 U 1 1 60DF9BE7
 P 6900 10725
 F 0 "SW35" H 6900 10980 50  0000 C CNN
@@ -699,7 +687,7 @@ F 3 "~" H 7200 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW6
+L kbd:SW_PUSH SW6
 U 1 1 60DF9BFF
 P 7950 8550
 F 0 "SW6" H 7950 8805 50  0000 C CNN
@@ -721,7 +709,7 @@ F 3 "~" H 8250 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW16
+L kbd:SW_PUSH SW16
 U 1 1 60DF9C0B
 P 7950 9275
 F 0 "SW16" H 7950 9530 50  0000 C CNN
@@ -743,7 +731,7 @@ F 3 "~" H 8250 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW26
+L kbd:SW_PUSH SW26
 U 1 1 60DF9C17
 P 7950 10000
 F 0 "SW26" H 7950 10255 50  0000 C CNN
@@ -765,7 +753,7 @@ F 3 "~" H 8250 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW36
+L kbd:SW_PUSH SW36
 U 1 1 60DF9C23
 P 7950 10725
 F 0 "SW36" H 7950 10980 50  0000 C CNN
@@ -787,7 +775,7 @@ F 3 "~" H 8250 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW7
+L kbd:SW_PUSH SW7
 U 1 1 60DF9C3B
 P 9075 8550
 F 0 "SW7" H 9075 8805 50  0000 C CNN
@@ -809,7 +797,7 @@ F 3 "~" H 9375 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW17
+L kbd:SW_PUSH SW17
 U 1 1 60DF9C47
 P 9075 9275
 F 0 "SW17" H 9075 9530 50  0000 C CNN
@@ -831,7 +819,7 @@ F 3 "~" H 9375 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW27
+L kbd:SW_PUSH SW27
 U 1 1 60DF9C53
 P 9075 10000
 F 0 "SW27" H 9075 10255 50  0000 C CNN
@@ -853,7 +841,7 @@ F 3 "~" H 9375 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW37
+L kbd:SW_PUSH SW37
 U 1 1 60DF9C5F
 P 9075 10725
 F 0 "SW37" H 9075 10980 50  0000 C CNN
@@ -875,7 +863,7 @@ F 3 "~" H 9375 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW8
+L kbd:SW_PUSH SW8
 U 1 1 60E19A35
 P 10100 8550
 F 0 "SW8" H 10100 8805 50  0000 C CNN
@@ -897,7 +885,7 @@ F 3 "~" H 10400 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW18
+L kbd:SW_PUSH SW18
 U 1 1 60E19A41
 P 10100 9275
 F 0 "SW18" H 10100 9530 50  0000 C CNN
@@ -919,7 +907,7 @@ F 3 "~" H 10400 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW28
+L kbd:SW_PUSH SW28
 U 1 1 60E19A4D
 P 10100 10000
 F 0 "SW28" H 10100 10255 50  0000 C CNN
@@ -941,7 +929,7 @@ F 3 "~" H 10400 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW38
+L kbd:SW_PUSH SW38
 U 1 1 60E19A59
 P 10100 10725
 F 0 "SW38" H 10100 10980 50  0000 C CNN
@@ -963,7 +951,7 @@ F 3 "~" H 10400 10875 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW9
+L kbd:SW_PUSH SW9
 U 1 1 60E19A71
 P 11225 8550
 F 0 "SW9" H 11225 8805 50  0000 C CNN
@@ -985,7 +973,7 @@ F 3 "~" H 11525 8700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW19
+L kbd:SW_PUSH SW19
 U 1 1 60E19A7D
 P 11225 9275
 F 0 "SW19" H 11225 9530 50  0000 C CNN
@@ -1007,7 +995,7 @@ F 3 "~" H 11525 9425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW29
+L kbd:SW_PUSH SW29
 U 1 1 60E19A89
 P 11225 10000
 F 0 "SW29" H 11225 10255 50  0000 C CNN
@@ -1029,7 +1017,7 @@ F 3 "~" H 11525 10150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:SW_PUSH-kbd SW39
+L kbd:SW_PUSH SW39
 U 1 1 60E19A95
 P 11225 10725
 F 0 "SW39" H 11225 10980 50  0000 C CNN
@@ -1499,7 +1487,7 @@ F 3 "" H 5025 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L molecule_v2-rescue:PMW3360DM-T2QU-PMW3360DM-T2QU U1
+L PMW3360DM-T2QU:PMW3360DM-T2QU U1
 U 1 1 60DEDFC1
 P 7600 1725
 F 0 "U1" H 8250 1990 50  0000 C CNN
@@ -1518,206 +1506,11 @@ F 11 "" H 8750 925 50  0001 L CNN "Arrow Price/Stock"
 	-1   0    0    1   
 $EndComp
 $Comp
-L molecule_v2-rescue:74LVC1T45GW,125-eec U3
-U 1 1 60D2317A
-P 8700 900
-F 0 "U3" H 9500 1165 50  0000 C CNN
-F 1 "74LVC1T45GW,125" H 9500 1074 50  0000 C CNN
-F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 1300 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 1400 50  0001 L CNN
-F 4 "+125°C" H 8700 1500 50  0001 L CNN "ambient temperature range high"
-F 5 "-40°C" H 8700 1600 50  0001 L CNN "ambient temperature range low"
-F 6 "No" H 8700 1700 50  0001 L CNN "automotive"
-F 7 "IC" H 8700 1800 50  0001 L CNN "category"
-F 8 "Integrated Circuits (ICs)" H 8700 1900 50  0001 L CNN "device class L1"
-F 9 "Logic ICs" H 8700 2000 50  0001 L CNN "device class L2"
-F 10 "Drivers and Transceivers" H 8700 2100 50  0001 L CNN "device class L3"
-F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 2200 50  0001 L CNN "digikey description"
-F 12 "1727-4560-1-ND" H 8700 2300 50  0001 L CNN "digikey part number"
-F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 2400 50  0001 L CNN "footprint url"
-F 14 "1.1mm" H 8700 2500 50  0001 L CNN "height"
-F 15 "Yes" H 8700 2600 50  0001 L CNN "lead free"
-F 16 "2d660f43f9fba5f8" H 8700 2700 50  0001 L CNN "library id"
-F 17 "Non-Inverting" H 8700 2800 50  0001 L CNN "logic function"
-F 18 "Non-Inverting" H 8700 2900 50  0001 L CNN "logic function desc"
-F 19 "Nexperia" H 8700 3000 50  0001 L CNN "manufacturer"
-F 20 "5.5V" H 8700 3100 50  0001 L CNN "max supply voltage"
-F 21 "1.2V" H 8700 3200 50  0001 L CNN "min supply voltage"
-F 22 "771-74LVC1T45GW125" H 8700 3300 50  0001 L CNN "mouser part number"
-F 23 "2-75uA" H 8700 3400 50  0001 L CNN "nominal supply current"
-F 24 "1" H 8700 3500 50  0001 L CNN "number of circuits"
-F 25 "1" H 8700 3600 50  0001 L CNN "number of inputs"
-F 26 "1" H 8700 3700 50  0001 L CNN "number of outputs"
-F 27 "SOT363" H 8700 3800 50  0001 L CNN "package"
-F 28 "2.5ns" H 8700 3900 50  0001 L CNN "propagation delay"
-F 29 "Yes" H 8700 4000 50  0001 L CNN "rohs"
-F 30 "+125°C" H 8700 4100 50  0001 L CNN "temperature range high"
-F 31 "-40°C" H 8700 4200 50  0001 L CNN "temperature range low"
-	1    8700 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L molecule_v2-rescue:74LVC1T45GW,125-eec U4
-U 1 1 60D290E0
-P 8700 1850
-F 0 "U4" H 9500 2115 50  0000 C CNN
-F 1 "74LVC1T45GW,125" H 9500 2024 50  0000 C CNN
-F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 2250 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 2350 50  0001 L CNN
-F 4 "+125°C" H 8700 2450 50  0001 L CNN "ambient temperature range high"
-F 5 "-40°C" H 8700 2550 50  0001 L CNN "ambient temperature range low"
-F 6 "No" H 8700 2650 50  0001 L CNN "automotive"
-F 7 "IC" H 8700 2750 50  0001 L CNN "category"
-F 8 "Integrated Circuits (ICs)" H 8700 2850 50  0001 L CNN "device class L1"
-F 9 "Logic ICs" H 8700 2950 50  0001 L CNN "device class L2"
-F 10 "Drivers and Transceivers" H 8700 3050 50  0001 L CNN "device class L3"
-F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 3150 50  0001 L CNN "digikey description"
-F 12 "1727-4560-1-ND" H 8700 3250 50  0001 L CNN "digikey part number"
-F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 3350 50  0001 L CNN "footprint url"
-F 14 "1.1mm" H 8700 3450 50  0001 L CNN "height"
-F 15 "Yes" H 8700 3550 50  0001 L CNN "lead free"
-F 16 "2d660f43f9fba5f8" H 8700 3650 50  0001 L CNN "library id"
-F 17 "Non-Inverting" H 8700 3750 50  0001 L CNN "logic function"
-F 18 "Non-Inverting" H 8700 3850 50  0001 L CNN "logic function desc"
-F 19 "Nexperia" H 8700 3950 50  0001 L CNN "manufacturer"
-F 20 "5.5V" H 8700 4050 50  0001 L CNN "max supply voltage"
-F 21 "1.2V" H 8700 4150 50  0001 L CNN "min supply voltage"
-F 22 "771-74LVC1T45GW125" H 8700 4250 50  0001 L CNN "mouser part number"
-F 23 "2-75uA" H 8700 4350 50  0001 L CNN "nominal supply current"
-F 24 "1" H 8700 4450 50  0001 L CNN "number of circuits"
-F 25 "1" H 8700 4550 50  0001 L CNN "number of inputs"
-F 26 "1" H 8700 4650 50  0001 L CNN "number of outputs"
-F 27 "SOT363" H 8700 4750 50  0001 L CNN "package"
-F 28 "2.5ns" H 8700 4850 50  0001 L CNN "propagation delay"
-F 29 "Yes" H 8700 4950 50  0001 L CNN "rohs"
-F 30 "+125°C" H 8700 5050 50  0001 L CNN "temperature range high"
-F 31 "-40°C" H 8700 5150 50  0001 L CNN "temperature range low"
-	1    8700 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L molecule_v2-rescue:74LVC1T45GW,125-eec U5
-U 1 1 60D2A92A
-P 8700 2750
-F 0 "U5" H 9500 3015 50  0000 C CNN
-F 1 "74LVC1T45GW,125" H 9500 2924 50  0000 C CNN
-F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 3150 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 3250 50  0001 L CNN
-F 4 "+125°C" H 8700 3350 50  0001 L CNN "ambient temperature range high"
-F 5 "-40°C" H 8700 3450 50  0001 L CNN "ambient temperature range low"
-F 6 "No" H 8700 3550 50  0001 L CNN "automotive"
-F 7 "IC" H 8700 3650 50  0001 L CNN "category"
-F 8 "Integrated Circuits (ICs)" H 8700 3750 50  0001 L CNN "device class L1"
-F 9 "Logic ICs" H 8700 3850 50  0001 L CNN "device class L2"
-F 10 "Drivers and Transceivers" H 8700 3950 50  0001 L CNN "device class L3"
-F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 4050 50  0001 L CNN "digikey description"
-F 12 "1727-4560-1-ND" H 8700 4150 50  0001 L CNN "digikey part number"
-F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 4250 50  0001 L CNN "footprint url"
-F 14 "1.1mm" H 8700 4350 50  0001 L CNN "height"
-F 15 "Yes" H 8700 4450 50  0001 L CNN "lead free"
-F 16 "2d660f43f9fba5f8" H 8700 4550 50  0001 L CNN "library id"
-F 17 "Non-Inverting" H 8700 4650 50  0001 L CNN "logic function"
-F 18 "Non-Inverting" H 8700 4750 50  0001 L CNN "logic function desc"
-F 19 "Nexperia" H 8700 4850 50  0001 L CNN "manufacturer"
-F 20 "5.5V" H 8700 4950 50  0001 L CNN "max supply voltage"
-F 21 "1.2V" H 8700 5050 50  0001 L CNN "min supply voltage"
-F 22 "771-74LVC1T45GW125" H 8700 5150 50  0001 L CNN "mouser part number"
-F 23 "2-75uA" H 8700 5250 50  0001 L CNN "nominal supply current"
-F 24 "1" H 8700 5350 50  0001 L CNN "number of circuits"
-F 25 "1" H 8700 5450 50  0001 L CNN "number of inputs"
-F 26 "1" H 8700 5550 50  0001 L CNN "number of outputs"
-F 27 "SOT363" H 8700 5650 50  0001 L CNN "package"
-F 28 "2.5ns" H 8700 5750 50  0001 L CNN "propagation delay"
-F 29 "Yes" H 8700 5850 50  0001 L CNN "rohs"
-F 30 "+125°C" H 8700 5950 50  0001 L CNN "temperature range high"
-F 31 "-40°C" H 8700 6050 50  0001 L CNN "temperature range low"
-	1    8700 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L molecule_v2-rescue:74LVC1T45GW,125-eec U6
-U 1 1 60D2CB04
-P 10775 900
-F 0 "U6" H 11575 1165 50  0000 C CNN
-F 1 "74LVC1T45GW,125" H 11575 1074 50  0000 C CNN
-F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 10775 1300 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 10775 1400 50  0001 L CNN
-F 4 "+125°C" H 10775 1500 50  0001 L CNN "ambient temperature range high"
-F 5 "-40°C" H 10775 1600 50  0001 L CNN "ambient temperature range low"
-F 6 "No" H 10775 1700 50  0001 L CNN "automotive"
-F 7 "IC" H 10775 1800 50  0001 L CNN "category"
-F 8 "Integrated Circuits (ICs)" H 10775 1900 50  0001 L CNN "device class L1"
-F 9 "Logic ICs" H 10775 2000 50  0001 L CNN "device class L2"
-F 10 "Drivers and Transceivers" H 10775 2100 50  0001 L CNN "device class L3"
-F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 10775 2200 50  0001 L CNN "digikey description"
-F 12 "1727-4560-1-ND" H 10775 2300 50  0001 L CNN "digikey part number"
-F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 10775 2400 50  0001 L CNN "footprint url"
-F 14 "1.1mm" H 10775 2500 50  0001 L CNN "height"
-F 15 "Yes" H 10775 2600 50  0001 L CNN "lead free"
-F 16 "2d660f43f9fba5f8" H 10775 2700 50  0001 L CNN "library id"
-F 17 "Non-Inverting" H 10775 2800 50  0001 L CNN "logic function"
-F 18 "Non-Inverting" H 10775 2900 50  0001 L CNN "logic function desc"
-F 19 "Nexperia" H 10775 3000 50  0001 L CNN "manufacturer"
-F 20 "5.5V" H 10775 3100 50  0001 L CNN "max supply voltage"
-F 21 "1.2V" H 10775 3200 50  0001 L CNN "min supply voltage"
-F 22 "771-74LVC1T45GW125" H 10775 3300 50  0001 L CNN "mouser part number"
-F 23 "2-75uA" H 10775 3400 50  0001 L CNN "nominal supply current"
-F 24 "1" H 10775 3500 50  0001 L CNN "number of circuits"
-F 25 "1" H 10775 3600 50  0001 L CNN "number of inputs"
-F 26 "1" H 10775 3700 50  0001 L CNN "number of outputs"
-F 27 "SOT363" H 10775 3800 50  0001 L CNN "package"
-F 28 "2.5ns" H 10775 3900 50  0001 L CNN "propagation delay"
-F 29 "Yes" H 10775 4000 50  0001 L CNN "rohs"
-F 30 "+125°C" H 10775 4100 50  0001 L CNN "temperature range high"
-F 31 "-40°C" H 10775 4200 50  0001 L CNN "temperature range low"
-	1    10775 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L molecule_v2-rescue:74LVC1T45GW,125-eec U7
-U 1 1 60D2E1E9
-P 10750 1850
-F 0 "U7" H 11550 2115 50  0000 C CNN
-F 1 "74LVC1T45GW,125" H 11550 2024 50  0000 C CNN
-F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 10750 2250 50  0001 L CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 10750 2350 50  0001 L CNN
-F 4 "+125°C" H 10750 2450 50  0001 L CNN "ambient temperature range high"
-F 5 "-40°C" H 10750 2550 50  0001 L CNN "ambient temperature range low"
-F 6 "No" H 10750 2650 50  0001 L CNN "automotive"
-F 7 "IC" H 10750 2750 50  0001 L CNN "category"
-F 8 "Integrated Circuits (ICs)" H 10750 2850 50  0001 L CNN "device class L1"
-F 9 "Logic ICs" H 10750 2950 50  0001 L CNN "device class L2"
-F 10 "Drivers and Transceivers" H 10750 3050 50  0001 L CNN "device class L3"
-F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 10750 3150 50  0001 L CNN "digikey description"
-F 12 "1727-4560-1-ND" H 10750 3250 50  0001 L CNN "digikey part number"
-F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 10750 3350 50  0001 L CNN "footprint url"
-F 14 "1.1mm" H 10750 3450 50  0001 L CNN "height"
-F 15 "Yes" H 10750 3550 50  0001 L CNN "lead free"
-F 16 "2d660f43f9fba5f8" H 10750 3650 50  0001 L CNN "library id"
-F 17 "Non-Inverting" H 10750 3750 50  0001 L CNN "logic function"
-F 18 "Non-Inverting" H 10750 3850 50  0001 L CNN "logic function desc"
-F 19 "Nexperia" H 10750 3950 50  0001 L CNN "manufacturer"
-F 20 "5.5V" H 10750 4050 50  0001 L CNN "max supply voltage"
-F 21 "1.2V" H 10750 4150 50  0001 L CNN "min supply voltage"
-F 22 "771-74LVC1T45GW125" H 10750 4250 50  0001 L CNN "mouser part number"
-F 23 "2-75uA" H 10750 4350 50  0001 L CNN "nominal supply current"
-F 24 "1" H 10750 4450 50  0001 L CNN "number of circuits"
-F 25 "1" H 10750 4550 50  0001 L CNN "number of inputs"
-F 26 "1" H 10750 4650 50  0001 L CNN "number of outputs"
-F 27 "SOT363" H 10750 4750 50  0001 L CNN "package"
-F 28 "2.5ns" H 10750 4850 50  0001 L CNN "propagation delay"
-F 29 "Yes" H 10750 4950 50  0001 L CNN "rohs"
-F 30 "+125°C" H 10750 5050 50  0001 L CNN "temperature range high"
-F 31 "-40°C" H 10750 5150 50  0001 L CNN "temperature range low"
-	1    10750 1850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 60D3126C
 P 5475 1075
 F 0 "C7" H 5590 1121 50  0000 L CNN
-F 1 "0.1μF" H 5590 1030 50  0000 L CNN
+F 1 "4.7μF" H 5590 1030 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 5513 925 50  0001 C CNN
 F 3 "~" H 5475 1075 50  0001 C CNN
 	1    5475 1075
@@ -1728,7 +1521,7 @@ L Device:C C8
 U 1 1 60D319B4
 P 5900 1075
 F 0 "C8" H 6015 1121 50  0000 L CNN
-F 1 "4.7μF" H 6015 1030 50  0000 L CNN
+F 1 "0.1μF" H 6015 1030 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 5938 925 50  0001 C CNN
 F 3 "~" H 5900 1075 50  0001 C CNN
 	1    5900 1075
@@ -1759,7 +1552,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 1325 6225 1325
 Connection ~ 6300 1325
-NoConn ~ 6300 1625
 $Comp
 L power:GND #PWR0116
 U 1 1 60D3A8EC
@@ -1860,28 +1652,6 @@ F 3 "" H 8800 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR0127
-U 1 1 60D6B088
-P 10850 1850
-F 0 "#PWR0127" H 10850 1700 50  0001 C CNN
-F 1 "VCC" V 10865 1977 50  0000 L CNN
-F 2 "" H 10850 1850 50  0001 C CNN
-F 3 "" H 10850 1850 50  0001 C CNN
-	1    10850 1850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR0128
-U 1 1 60D6BD02
-P 10875 900
-F 0 "#PWR0128" H 10875 750 50  0001 C CNN
-F 1 "VCC" V 10890 1027 50  0000 L CNN
-F 2 "" H 10875 900 50  0001 C CNN
-F 3 "" H 10875 900 50  0001 C CNN
-	1    10875 900 
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:VCC #PWR0135
 U 1 1 60D7219E
 P 8800 2050
@@ -1901,39 +1671,6 @@ F 1 "VCC" V 8815 3077 50  0000 L CNN
 F 2 "" H 8800 2950 50  0001 C CNN
 F 3 "" H 8800 2950 50  0001 C CNN
 	1    8800 2950
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0137
-U 1 1 60D73746
-P 10200 1300
-F 0 "#PWR0137" H 10200 1050 50  0001 C CNN
-F 1 "GND" V 10205 1172 50  0000 R CNN
-F 2 "" H 10200 1300 50  0001 C CNN
-F 3 "" H 10200 1300 50  0001 C CNN
-	1    10200 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0138
-U 1 1 60D74458
-P 10200 2250
-F 0 "#PWR0138" H 10200 2000 50  0001 C CNN
-F 1 "GND" V 10205 2122 50  0000 R CNN
-F 2 "" H 10200 2250 50  0001 C CNN
-F 3 "" H 10200 2250 50  0001 C CNN
-	1    10200 2250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR0139
-U 1 1 60D74B6E
-P 10200 3150
-F 0 "#PWR0139" H 10200 2900 50  0001 C CNN
-F 1 "GND" V 10205 3022 50  0000 R CNN
-F 2 "" H 10200 3150 50  0001 C CNN
-F 3 "" H 10200 3150 50  0001 C CNN
-	1    10200 3150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1964,33 +1701,10 @@ Text GLabel 8800 2250 0    50   Input ~ 0
 SCLK-H
 Text GLabel 8800 3150 0    50   Input ~ 0
 SS-H
-Text GLabel 10875 1300 0    50   Input ~ 0
-MOT-H
-Text GLabel 10850 2250 0    50   Input ~ 0
-MISO-H
-Text GLabel 10200 1100 2    50   Input ~ 0
-MOSI
-Text GLabel 10200 2050 2    50   Input ~ 0
-SCLK
-Text GLabel 10200 2950 2    50   Input ~ 0
-SS
 Text GLabel 12275 1100 2    50   Input ~ 0
 MOTION
 Text GLabel 12250 2050 2    50   Input ~ 0
 MISO
-$Comp
-L power:GND #PWR0142
-U 1 1 60D7DA43
-P 10875 1100
-F 0 "#PWR0142" H 10875 850 50  0001 C CNN
-F 1 "GND" V 10880 972 50  0000 R CNN
-F 2 "" H 10875 1100 50  0001 C CNN
-F 3 "" H 10875 1100 50  0001 C CNN
-	1    10875 1100
-	0    1    1    0   
-$EndComp
-Text GLabel 10850 2050 0    50   Input ~ 0
-SS-H
 Text GLabel 3050 2950 2    50   Input ~ 0
 col2
 Text GLabel 3050 1550 2    50   Input ~ 0
@@ -2105,7 +1819,7 @@ F 3 "" H 6850 3325 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:TLV70019DDCR-TLV70019DDCR U2
+L TLV70019DDCR:TLV70019DDCR U2
 U 1 1 6104C504
 P 6850 3325
 F 0 "U2" H 7350 3498 50  0000 C CNN
@@ -2187,106 +1901,6 @@ F 3 "" H 8800 900 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:VCC #PWR0118
-U 1 1 610DBD9B
-P 12275 900
-F 0 "#PWR0118" H 12275 750 50  0001 C CNN
-F 1 "VCC" V 12290 1028 50  0000 L CNN
-F 2 "" H 12275 900 50  0001 C CNN
-F 3 "" H 12275 900 50  0001 C CNN
-	1    12275 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0119
-U 1 1 610DE865
-P 12250 1850
-F 0 "#PWR0119" H 12250 1700 50  0001 C CNN
-F 1 "VCC" V 12265 1978 50  0000 L CNN
-F 2 "" H 12250 1850 50  0001 C CNN
-F 3 "" H 12250 1850 50  0001 C CNN
-	1    12250 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0120
-U 1 1 610DF50E
-P 10200 900
-F 0 "#PWR0120" H 10200 750 50  0001 C CNN
-F 1 "VCC" V 10215 1028 50  0000 L CNN
-F 2 "" H 10200 900 50  0001 C CNN
-F 3 "" H 10200 900 50  0001 C CNN
-	1    10200 900 
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0123
-U 1 1 610E01B7
-P 10200 1850
-F 0 "#PWR0123" H 10200 1700 50  0001 C CNN
-F 1 "VCC" V 10215 1978 50  0000 L CNN
-F 2 "" H 10200 1850 50  0001 C CNN
-F 3 "" H 10200 1850 50  0001 C CNN
-	1    10200 1850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0129
-U 1 1 610E0EB0
-P 10200 2750
-F 0 "#PWR0129" H 10200 2600 50  0001 C CNN
-F 1 "VCC" V 10215 2878 50  0000 L CNN
-F 2 "" H 10200 2750 50  0001 C CNN
-F 3 "" H 10200 2750 50  0001 C CNN
-	1    10200 2750
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0130
-U 1 1 610E1B8E
-P 7900 1125
-F 0 "#PWR0130" H 7900 975 50  0001 C CNN
-F 1 "VCC" V 7915 1253 50  0000 L CNN
-F 2 "" H 7900 1125 50  0001 C CNN
-F 3 "" H 7900 1125 50  0001 C CNN
-	1    7900 1125
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0131
-U 1 1 610E285F
-P 6225 1325
-F 0 "#PWR0131" H 6225 1175 50  0001 C CNN
-F 1 "VCC" V 6240 1452 50  0000 L CNN
-F 2 "" H 6225 1325 50  0001 C CNN
-F 3 "" H 6225 1325 50  0001 C CNN
-	1    6225 1325
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:VCC #PWR0132
-U 1 1 610E4DC9
-P 6700 2250
-F 0 "#PWR0132" H 6700 2100 50  0001 C CNN
-F 1 "VCC" V 6715 2378 50  0000 L CNN
-F 2 "" H 6700 2250 50  0001 C CNN
-F 3 "" H 6700 2250 50  0001 C CNN
-	1    6700 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR0133
-U 1 1 610E5A3A
-P 5950 3325
-F 0 "#PWR0133" H 5950 3175 50  0001 C CNN
-F 1 "VCC" V 5965 3452 50  0000 L CNN
-F 2 "" H 5950 3325 50  0001 C CNN
-F 3 "" H 5950 3325 50  0001 C CNN
-	1    5950 3325
-	0    -1   -1   0   
-$EndComp
-Connection ~ 5950 3325
-$Comp
 L Device:Crystal_GND24 Y0
 U 1 1 612D6018
 P 1300 1300
@@ -2336,7 +1950,7 @@ Wire Wire Line
 Text GLabel 3050 2550 2    50   Input ~ 0
 LED
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED0
+L kbd:YS-SK6812MINI-E LED0
 U 1 1 60DB8C92
 P 4325 5300
 F 0 "LED0" V 4295 5644 29  0000 L CNN
@@ -2347,7 +1961,7 @@ F 3 "" H 4425 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED26
+L kbd:YS-SK6812MINI-E LED26
 U 1 1 60DF68BB
 P 10950 6500
 F 0 "LED26" V 10920 6844 29  0000 L CNN
@@ -2447,7 +2061,7 @@ Wire Wire Line
 Connection ~ 9425 4825
 Wire Wire Line
 	9425 4825 9075 4825
-Text GLabel 2125 5000 1    50   Input ~ 0
+Text GLabel 4325 5000 1    50   Input ~ 0
 LED
 $Comp
 L power:VCC #PWR0144
@@ -2504,33 +2118,7 @@ F 3 "" H 9400 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2125 7400 2675 7400
-Wire Wire Line
-	2675 7400 2675 5000
-Wire Wire Line
-	2675 5000 3200 5000
-Wire Wire Line
-	3200 6800 3725 6800
-Wire Wire Line
-	3725 6800 3725 5000
-Wire Wire Line
-	3725 5000 4325 5000
-Wire Wire Line
-	2900 7500 4025 7500
-Connection ~ 4025 7500
-Wire Wire Line
-	1825 7500 2900 7500
-Connection ~ 2900 7500
-Wire Wire Line
-	2425 4825 3500 4825
-Connection ~ 4625 4825
-Wire Wire Line
 	4625 4825 5750 4825
-Connection ~ 3500 4825
-Wire Wire Line
-	3500 4825 4625 4825
-Wire Wire Line
-	3200 6800 3200 6200
 Connection ~ 4725 2000
 Connection ~ 4725 1900
 NoConn ~ 4725 2500
@@ -2547,7 +2135,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 4275 19
 $EndComp
 Connection ~ 3825 2800
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED39
+L kbd:YS-SK6812MINI-E LED39
 U 1 1 60E0111A
 P 14200 5300
 F 0 "LED39" V 14170 5644 29  0000 L CNN
@@ -2558,7 +2146,7 @@ F 3 "" H 14300 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED38
+L kbd:YS-SK6812MINI-E LED38
 U 1 1 60E01114
 P 13075 7100
 F 0 "LED38" V 13045 7444 29  0000 L CNN
@@ -2569,7 +2157,7 @@ F 3 "" H 13175 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED37
+L kbd:YS-SK6812MINI-E LED37
 U 1 1 60E0110E
 P 12075 5300
 F 0 "LED37" V 12045 5644 29  0000 L CNN
@@ -2580,7 +2168,7 @@ F 3 "" H 12175 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED36
+L kbd:YS-SK6812MINI-E LED36
 U 1 1 60E01108
 P 10950 7100
 F 0 "LED36" V 10920 7444 29  0000 L CNN
@@ -2591,7 +2179,7 @@ F 3 "" H 11050 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED35
+L kbd:YS-SK6812MINI-E LED35
 U 1 1 60E01102
 P 9900 5300
 F 0 "LED35" V 9870 5644 29  0000 L CNN
@@ -2602,7 +2190,7 @@ F 3 "" H 10000 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED34
+L kbd:YS-SK6812MINI-E LED34
 U 1 1 60E010FC
 P 8775 7100
 F 0 "LED34" V 8745 7444 29  0000 L CNN
@@ -2613,7 +2201,7 @@ F 3 "" H 8875 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED33
+L kbd:YS-SK6812MINI-E LED33
 U 1 1 60E010F6
 P 7625 5300
 F 0 "LED33" V 7595 5644 29  0000 L CNN
@@ -2624,7 +2212,7 @@ F 3 "" H 7725 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED32
+L kbd:YS-SK6812MINI-E LED32
 U 1 1 60E010F0
 P 6500 7100
 F 0 "LED32" V 6470 7444 29  0000 L CNN
@@ -2635,7 +2223,7 @@ F 3 "" H 6600 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED31
+L kbd:YS-SK6812MINI-E LED31
 U 1 1 60DF68D9
 P 5450 5300
 F 0 "LED31" V 5420 5644 29  0000 L CNN
@@ -2646,7 +2234,7 @@ F 3 "" H 5550 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED30
+L kbd:YS-SK6812MINI-E LED30
 U 1 1 60DF68D3
 P 4325 7100
 F 0 "LED30" V 4295 7444 29  0000 L CNN
@@ -2657,7 +2245,7 @@ F 3 "" H 4425 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED29
+L kbd:YS-SK6812MINI-E LED29
 U 1 1 60DF68CD
 P 14200 5900
 F 0 "LED29" V 14170 6244 29  0000 L CNN
@@ -2668,7 +2256,7 @@ F 3 "" H 14300 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED28
+L kbd:YS-SK6812MINI-E LED28
 U 1 1 60DF68C7
 P 13075 6500
 F 0 "LED28" V 13045 6844 29  0000 L CNN
@@ -2679,7 +2267,7 @@ F 3 "" H 13175 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED25
+L kbd:YS-SK6812MINI-E LED25
 U 1 1 60DF68B5
 P 9900 5900
 F 0 "LED25" V 9870 6244 29  0000 L CNN
@@ -2690,7 +2278,7 @@ F 3 "" H 10000 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED24
+L kbd:YS-SK6812MINI-E LED24
 U 1 1 60DF68AF
 P 8775 6500
 F 0 "LED24" V 8745 6844 29  0000 L CNN
@@ -2701,7 +2289,7 @@ F 3 "" H 8875 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED23
+L kbd:YS-SK6812MINI-E LED23
 U 1 1 60DF68A9
 P 7625 5900
 F 0 "LED23" V 7595 6244 29  0000 L CNN
@@ -2712,7 +2300,7 @@ F 3 "" H 7725 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED22
+L kbd:YS-SK6812MINI-E LED22
 U 1 1 60DF68A3
 P 6500 6500
 F 0 "LED22" V 6470 6844 29  0000 L CNN
@@ -2723,7 +2311,7 @@ F 3 "" H 6600 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED21
+L kbd:YS-SK6812MINI-E LED21
 U 1 1 60DF689D
 P 5450 5900
 F 0 "LED21" V 5420 6244 29  0000 L CNN
@@ -2734,7 +2322,7 @@ F 3 "" H 5550 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED20
+L kbd:YS-SK6812MINI-E LED20
 U 1 1 60DF6897
 P 4325 6500
 F 0 "LED20" V 4295 6844 29  0000 L CNN
@@ -2745,7 +2333,7 @@ F 3 "" H 4425 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED19
+L kbd:YS-SK6812MINI-E LED19
 U 1 1 60DF6891
 P 14200 6500
 F 0 "LED19" V 14170 6844 29  0000 L CNN
@@ -2756,7 +2344,7 @@ F 3 "" H 14300 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED18
+L kbd:YS-SK6812MINI-E LED18
 U 1 1 60DF688B
 P 13075 5900
 F 0 "LED18" V 13045 6244 29  0000 L CNN
@@ -2767,7 +2355,7 @@ F 3 "" H 13175 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED17
+L kbd:YS-SK6812MINI-E LED17
 U 1 1 60DF6885
 P 12075 6500
 F 0 "LED17" V 12045 6844 29  0000 L CNN
@@ -2778,7 +2366,7 @@ F 3 "" H 12175 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED16
+L kbd:YS-SK6812MINI-E LED16
 U 1 1 60DF687F
 P 10950 5900
 F 0 "LED16" V 10920 6244 29  0000 L CNN
@@ -2789,7 +2377,7 @@ F 3 "" H 11050 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED15
+L kbd:YS-SK6812MINI-E LED15
 U 1 1 60DDF0DA
 P 9900 6500
 F 0 "LED15" V 9870 6844 29  0000 L CNN
@@ -2800,7 +2388,7 @@ F 3 "" H 10000 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED14
+L kbd:YS-SK6812MINI-E LED14
 U 1 1 60DDF0D4
 P 8775 5900
 F 0 "LED14" V 8745 6244 29  0000 L CNN
@@ -2811,7 +2399,7 @@ F 3 "" H 8875 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED13
+L kbd:YS-SK6812MINI-E LED13
 U 1 1 60DDF0CE
 P 7625 6500
 F 0 "LED13" V 7595 6844 29  0000 L CNN
@@ -2822,7 +2410,7 @@ F 3 "" H 7725 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED12
+L kbd:YS-SK6812MINI-E LED12
 U 1 1 60DDF0C8
 P 6500 5900
 F 0 "LED12" V 6470 6244 29  0000 L CNN
@@ -2833,7 +2421,7 @@ F 3 "" H 6600 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED10
+L kbd:YS-SK6812MINI-E LED10
 U 1 1 60DDF0BC
 P 4325 5900
 F 0 "LED10" V 4295 6244 29  0000 L CNN
@@ -2844,7 +2432,7 @@ F 3 "" H 4425 5650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED8
+L kbd:YS-SK6812MINI-E LED8
 U 1 1 60DDF0B0
 P 13075 5300
 F 0 "LED8" V 13045 5644 29  0000 L CNN
@@ -2855,7 +2443,7 @@ F 3 "" H 13175 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED11
+L kbd:YS-SK6812MINI-E LED11
 U 1 1 60DDF0C2
 P 5450 6500
 F 0 "LED11" V 5420 6844 29  0000 L CNN
@@ -2866,7 +2454,7 @@ F 3 "" H 5550 6250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED7
+L kbd:YS-SK6812MINI-E LED7
 U 1 1 60DD2AC7
 P 12075 7100
 F 0 "LED7" V 12045 7444 29  0000 L CNN
@@ -2877,7 +2465,7 @@ F 3 "" H 12175 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED6
+L kbd:YS-SK6812MINI-E LED6
 U 1 1 60DD2AC1
 P 10950 5300
 F 0 "LED6" V 10920 5644 29  0000 L CNN
@@ -2888,7 +2476,7 @@ F 3 "" H 11050 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED5
+L kbd:YS-SK6812MINI-E LED5
 U 1 1 60DD2ABB
 P 9900 7100
 F 0 "LED5" V 9870 7444 29  0000 L CNN
@@ -2899,7 +2487,7 @@ F 3 "" H 10000 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED4
+L kbd:YS-SK6812MINI-E LED4
 U 1 1 60DD2AB5
 P 8775 5300
 F 0 "LED4" V 8745 5644 29  0000 L CNN
@@ -2910,7 +2498,7 @@ F 3 "" H 8875 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED3
+L kbd:YS-SK6812MINI-E LED3
 U 1 1 60DC7FF8
 P 7625 7100
 F 0 "LED3" V 7595 7444 29  0000 L CNN
@@ -2921,7 +2509,7 @@ F 3 "" H 7725 6850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED2
+L kbd:YS-SK6812MINI-E LED2
 U 1 1 60DC7FF2
 P 6500 5300
 F 0 "LED2" V 6470 5644 29  0000 L CNN
@@ -2932,7 +2520,7 @@ F 3 "" H 6600 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED1
+L kbd:YS-SK6812MINI-E LED1
 U 1 1 60DBC5DC
 P 5450 7100
 F 0 "LED1" V 5420 7444 29  0000 L CNN
@@ -3089,7 +2677,7 @@ Connection ~ 11250 5900
 Wire Wire Line
 	11250 5900 11250 6500
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED27
+L kbd:YS-SK6812MINI-E LED27
 U 1 1 60DF68C1
 P 12075 5900
 F 0 "LED27" V 12045 6244 29  0000 L CNN
@@ -3162,7 +2750,7 @@ Connection ~ 14500 6500
 Wire Wire Line
 	14500 6500 14500 7100
 $Comp
-L molecule_v2-rescue:YS-SK6812MINI-E-kbd LED9
+L kbd:YS-SK6812MINI-E LED9
 U 1 1 60DDF0B6
 P 14200 7100
 F 0 "LED9" V 14170 7444 29  0000 L CNN
@@ -3177,104 +2765,6 @@ Wire Wire Line
 Wire Wire Line
 	13900 7100 13900 7500
 Connection ~ 13900 7100
-$Comp
-L LED:WS2812B D40
-U 1 1 60DF7090
-P 3200 5900
-F 0 "D40" V 3154 6244 50  0000 L CNN
-F 1 "WS2812B" V 3245 6244 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3250 5600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3300 5525 50  0001 L TNN
-	1    3200 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L LED:WS2812B D41
-U 1 1 60DFDE6C
-P 3200 5300
-F 0 "D41" V 3154 5644 50  0000 L CNN
-F 1 "WS2812B" V 3245 5644 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 3250 5000 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 3300 4925 50  0001 L TNN
-	1    3200 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L LED:WS2812B D42
-U 1 1 60E0FB65
-P 2125 7100
-F 0 "D42" V 2079 7444 50  0000 L CNN
-F 1 "WS2812B" V 2170 7444 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2175 6800 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2225 6725 50  0001 L TNN
-	1    2125 7100
-	0    1    1    0   
-$EndComp
-$Comp
-L LED:WS2812B D43
-U 1 1 60E0FB6B
-P 2125 6500
-F 0 "D43" V 2079 6844 50  0000 L CNN
-F 1 "WS2812B" V 2170 6844 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2175 6200 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2225 6125 50  0001 L TNN
-	1    2125 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L LED:WS2812B D44
-U 1 1 60E23BC6
-P 2125 5900
-F 0 "D44" V 2079 6244 50  0000 L CNN
-F 1 "WS2812B" V 2170 6244 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2175 5600 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2225 5525 50  0001 L TNN
-	1    2125 5900
-	0    1    1    0   
-$EndComp
-$Comp
-L LED:WS2812B D45
-U 1 1 60E23BCC
-P 2125 5300
-F 0 "D45" V 2079 5644 50  0000 L CNN
-F 1 "WS2812B" V 2170 5644 50  0000 L CNN
-F 2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" H 2175 5000 50  0001 L TNN
-F 3 "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf" H 2225 4925 50  0001 L TNN
-	1    2125 5300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2425 4825 2425 5300
-Connection ~ 2425 5300
-Wire Wire Line
-	2900 5300 2900 5900
-Connection ~ 2900 5900
-Wire Wire Line
-	2900 5900 2900 7500
-Wire Wire Line
-	3500 4825 3500 5300
-Connection ~ 3500 5300
-Wire Wire Line
-	3500 5300 3500 5900
-Wire Wire Line
-	2425 5300 2425 5900
-Connection ~ 2425 5900
-Wire Wire Line
-	2425 5900 2425 6500
-Connection ~ 1825 6500
-Connection ~ 2425 6500
-Wire Wire Line
-	2425 6500 2425 7100
-Wire Wire Line
-	1825 6500 1825 7100
-Connection ~ 1825 7100
-Wire Wire Line
-	1825 7100 1825 7500
-Wire Wire Line
-	1825 5300 1825 5900
-Connection ~ 1825 5900
-Wire Wire Line
-	1825 5900 1825 6500
 Connection ~ 2350 4350
 Wire Wire Line
 	2450 750  2550 750 
@@ -3298,4 +2788,437 @@ Wire Wire Line
 Text GLabel 3050 2350 2    50   Input ~ 0
 row1
 NoConn ~ 3050 1650
+$Comp
+L power:VDD #PWR0118
+U 1 1 613F6242
+P 6225 1325
+F 0 "#PWR0118" H 6225 1175 50  0001 C CNN
+F 1 "VDD" V 6240 1452 50  0000 L CNN
+F 2 "" H 6225 1325 50  0001 C CNN
+F 3 "" H 6225 1325 50  0001 C CNN
+	1    6225 1325
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 613F78B9
+P 6150 1625
+F 0 "R8" V 6050 1625 50  0000 C CNN
+F 1 "10k" V 6150 1625 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6080 1625 50  0001 C CNN
+F 3 "~" H 6150 1625 50  0001 C CNN
+	1    6150 1625
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0119
+U 1 1 6141F929
+P 6000 1625
+F 0 "#PWR0119" H 6000 1475 50  0001 C CNN
+F 1 "VDD" V 6015 1752 50  0000 L CNN
+F 2 "" H 6000 1625 50  0001 C CNN
+F 3 "" H 6000 1625 50  0001 C CNN
+	1    6000 1625
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VDD #PWR0120
+U 1 1 61420A29
+P 7900 1125
+F 0 "#PWR0120" H 7900 975 50  0001 C CNN
+F 1 "VDD" V 7915 1253 50  0000 L CNN
+F 2 "" H 7900 1125 50  0001 C CNN
+F 3 "" H 7900 1125 50  0001 C CNN
+	1    7900 1125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0123
+U 1 1 61421E14
+P 6700 2250
+F 0 "#PWR0123" H 6700 2100 50  0001 C CNN
+F 1 "VDD" V 6715 2378 50  0000 L CNN
+F 2 "" H 6700 2250 50  0001 C CNN
+F 3 "" H 6700 2250 50  0001 C CNN
+	1    6700 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0129
+U 1 1 61422F6C
+P 5950 3325
+F 0 "#PWR0129" H 5950 3175 50  0001 C CNN
+F 1 "VDD" V 5965 3452 50  0000 L CNN
+F 2 "" H 5950 3325 50  0001 C CNN
+F 3 "" H 5950 3325 50  0001 C CNN
+	1    5950 3325
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5950 3325
+$Comp
+L power:VDD #PWR0130
+U 1 1 61428743
+P 12275 900
+F 0 "#PWR0130" H 12275 750 50  0001 C CNN
+F 1 "VDD" V 12290 1028 50  0000 L CNN
+F 2 "" H 12275 900 50  0001 C CNN
+F 3 "" H 12275 900 50  0001 C CNN
+	1    12275 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0131
+U 1 1 614298EA
+P 12250 1850
+F 0 "#PWR0131" H 12250 1700 50  0001 C CNN
+F 1 "VDD" V 12265 1978 50  0000 L CNN
+F 2 "" H 12250 1850 50  0001 C CNN
+F 3 "" H 12250 1850 50  0001 C CNN
+	1    12250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 6142B046
+P 9150 3800
+F 0 "#FLG0103" H 9150 3875 50  0001 C CNN
+F 1 "PWR_FLAG" H 9150 3973 50  0000 C CNN
+F 2 "" H 9150 3800 50  0001 C CNN
+F 3 "~" H 9150 3800 50  0001 C CNN
+	1    9150 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR0132
+U 1 1 6143E825
+P 9150 3800
+F 0 "#PWR0132" H 9150 3650 50  0001 C CNN
+F 1 "VDD" H 9165 3973 50  0000 C CNN
+F 2 "" H 9150 3800 50  0001 C CNN
+F 3 "" H 9150 3800 50  0001 C CNN
+	1    9150 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LVC1T45GW:74LVC1T45GW,125 U6
+U 1 1 60D2CB04
+P 10775 900
+F 0 "U6" H 11575 1165 50  0000 C CNN
+F 1 "74LVC1T45GW,125" H 11575 1074 50  0000 C CNN
+F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 10775 1300 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 10775 1400 50  0001 L CNN
+F 4 "+125°C" H 10775 1500 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 10775 1600 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 10775 1700 50  0001 L CNN "automotive"
+F 7 "IC" H 10775 1800 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 10775 1900 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 10775 2000 50  0001 L CNN "device class L2"
+F 10 "Drivers and Transceivers" H 10775 2100 50  0001 L CNN "device class L3"
+F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 10775 2200 50  0001 L CNN "digikey description"
+F 12 "1727-4560-1-ND" H 10775 2300 50  0001 L CNN "digikey part number"
+F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 10775 2400 50  0001 L CNN "footprint url"
+F 14 "1.1mm" H 10775 2500 50  0001 L CNN "height"
+F 15 "Yes" H 10775 2600 50  0001 L CNN "lead free"
+F 16 "2d660f43f9fba5f8" H 10775 2700 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 10775 2800 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 10775 2900 50  0001 L CNN "logic function desc"
+F 19 "Nexperia" H 10775 3000 50  0001 L CNN "manufacturer"
+F 20 "5.5V" H 10775 3100 50  0001 L CNN "max supply voltage"
+F 21 "1.2V" H 10775 3200 50  0001 L CNN "min supply voltage"
+F 22 "771-74LVC1T45GW125" H 10775 3300 50  0001 L CNN "mouser part number"
+F 23 "2-75uA" H 10775 3400 50  0001 L CNN "nominal supply current"
+F 24 "1" H 10775 3500 50  0001 L CNN "number of circuits"
+F 25 "1" H 10775 3600 50  0001 L CNN "number of inputs"
+F 26 "1" H 10775 3700 50  0001 L CNN "number of outputs"
+F 27 "SOT363" H 10775 3800 50  0001 L CNN "package"
+F 28 "2.5ns" H 10775 3900 50  0001 L CNN "propagation delay"
+F 29 "Yes" H 10775 4000 50  0001 L CNN "rohs"
+F 30 "+125°C" H 10775 4100 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 10775 4200 50  0001 L CNN "temperature range low"
+	1    10775 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LVC1T45GW:74LVC1T45GW,125 U7
+U 1 1 60D2E1E9
+P 10750 1850
+F 0 "U7" H 11550 2115 50  0000 C CNN
+F 1 "74LVC1T45GW,125" H 11550 2024 50  0000 C CNN
+F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 10750 2250 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 10750 2350 50  0001 L CNN
+F 4 "+125°C" H 10750 2450 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 10750 2550 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 10750 2650 50  0001 L CNN "automotive"
+F 7 "IC" H 10750 2750 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 10750 2850 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 10750 2950 50  0001 L CNN "device class L2"
+F 10 "Drivers and Transceivers" H 10750 3050 50  0001 L CNN "device class L3"
+F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 10750 3150 50  0001 L CNN "digikey description"
+F 12 "1727-4560-1-ND" H 10750 3250 50  0001 L CNN "digikey part number"
+F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 10750 3350 50  0001 L CNN "footprint url"
+F 14 "1.1mm" H 10750 3450 50  0001 L CNN "height"
+F 15 "Yes" H 10750 3550 50  0001 L CNN "lead free"
+F 16 "2d660f43f9fba5f8" H 10750 3650 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 10750 3750 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 10750 3850 50  0001 L CNN "logic function desc"
+F 19 "Nexperia" H 10750 3950 50  0001 L CNN "manufacturer"
+F 20 "5.5V" H 10750 4050 50  0001 L CNN "max supply voltage"
+F 21 "1.2V" H 10750 4150 50  0001 L CNN "min supply voltage"
+F 22 "771-74LVC1T45GW125" H 10750 4250 50  0001 L CNN "mouser part number"
+F 23 "2-75uA" H 10750 4350 50  0001 L CNN "nominal supply current"
+F 24 "1" H 10750 4450 50  0001 L CNN "number of circuits"
+F 25 "1" H 10750 4550 50  0001 L CNN "number of inputs"
+F 26 "1" H 10750 4650 50  0001 L CNN "number of outputs"
+F 27 "SOT363" H 10750 4750 50  0001 L CNN "package"
+F 28 "2.5ns" H 10750 4850 50  0001 L CNN "propagation delay"
+F 29 "Yes" H 10750 4950 50  0001 L CNN "rohs"
+F 30 "+125°C" H 10750 5050 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 10750 5150 50  0001 L CNN "temperature range low"
+	1    10750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0133
+U 1 1 61427478
+P 10200 2750
+F 0 "#PWR0133" H 10200 2600 50  0001 C CNN
+F 1 "VDD" V 10215 2878 50  0000 L CNN
+F 2 "" H 10200 2750 50  0001 C CNN
+F 3 "" H 10200 2750 50  0001 C CNN
+	1    10200 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0146
+U 1 1 6142525D
+P 10200 1850
+F 0 "#PWR0146" H 10200 1700 50  0001 C CNN
+F 1 "VDD" V 10215 1978 50  0000 L CNN
+F 2 "" H 10200 1850 50  0001 C CNN
+F 3 "" H 10200 1850 50  0001 C CNN
+	1    10200 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR0147
+U 1 1 614240B6
+P 10200 900
+F 0 "#PWR0147" H 10200 750 50  0001 C CNN
+F 1 "VDD" V 10215 1028 50  0000 L CNN
+F 2 "" H 10200 900 50  0001 C CNN
+F 3 "" H 10200 900 50  0001 C CNN
+	1    10200 900 
+	0    1    1    0   
+$EndComp
+Text GLabel 10850 2050 0    50   Input ~ 0
+SS-H
+$Comp
+L power:GND #PWR0142
+U 1 1 60D7DA43
+P 10875 1100
+F 0 "#PWR0142" H 10875 850 50  0001 C CNN
+F 1 "GND" V 10880 972 50  0000 R CNN
+F 2 "" H 10875 1100 50  0001 C CNN
+F 3 "" H 10875 1100 50  0001 C CNN
+	1    10875 1100
+	0    1    1    0   
+$EndComp
+Text GLabel 10200 2950 2    50   Input ~ 0
+SS
+Text GLabel 10200 2050 2    50   Input ~ 0
+SCLK
+Text GLabel 10200 1100 2    50   Input ~ 0
+MOSI
+Text GLabel 10850 2250 0    50   Input ~ 0
+MISO-H
+Text GLabel 10875 1300 0    50   Input ~ 0
+MOT-H
+$Comp
+L power:GND #PWR0139
+U 1 1 60D74B6E
+P 10200 3150
+F 0 "#PWR0139" H 10200 2900 50  0001 C CNN
+F 1 "GND" V 10205 3022 50  0000 R CNN
+F 2 "" H 10200 3150 50  0001 C CNN
+F 3 "" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 60D74458
+P 10200 2250
+F 0 "#PWR0138" H 10200 2000 50  0001 C CNN
+F 1 "GND" V 10205 2122 50  0000 R CNN
+F 2 "" H 10200 2250 50  0001 C CNN
+F 3 "" H 10200 2250 50  0001 C CNN
+	1    10200 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 60D73746
+P 10200 1300
+F 0 "#PWR0137" H 10200 1050 50  0001 C CNN
+F 1 "GND" V 10205 1172 50  0000 R CNN
+F 2 "" H 10200 1300 50  0001 C CNN
+F 3 "" H 10200 1300 50  0001 C CNN
+	1    10200 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0128
+U 1 1 60D6BD02
+P 10875 900
+F 0 "#PWR0128" H 10875 750 50  0001 C CNN
+F 1 "VCC" V 10890 1027 50  0000 L CNN
+F 2 "" H 10875 900 50  0001 C CNN
+F 3 "" H 10875 900 50  0001 C CNN
+	1    10875 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR0127
+U 1 1 60D6B088
+P 10850 1850
+F 0 "#PWR0127" H 10850 1700 50  0001 C CNN
+F 1 "VCC" V 10865 1977 50  0000 L CNN
+F 2 "" H 10850 1850 50  0001 C CNN
+F 3 "" H 10850 1850 50  0001 C CNN
+	1    10850 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 74LVC1T45GW:74LVC1T45GW,125 U5
+U 1 1 60D2A92A
+P 8700 2750
+F 0 "U5" H 9500 3015 50  0000 C CNN
+F 1 "74LVC1T45GW,125" H 9500 2924 50  0000 C CNN
+F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 3150 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 3250 50  0001 L CNN
+F 4 "+125°C" H 8700 3350 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 8700 3450 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 8700 3550 50  0001 L CNN "automotive"
+F 7 "IC" H 8700 3650 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 8700 3750 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 8700 3850 50  0001 L CNN "device class L2"
+F 10 "Drivers and Transceivers" H 8700 3950 50  0001 L CNN "device class L3"
+F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 4050 50  0001 L CNN "digikey description"
+F 12 "1727-4560-1-ND" H 8700 4150 50  0001 L CNN "digikey part number"
+F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 4250 50  0001 L CNN "footprint url"
+F 14 "1.1mm" H 8700 4350 50  0001 L CNN "height"
+F 15 "Yes" H 8700 4450 50  0001 L CNN "lead free"
+F 16 "2d660f43f9fba5f8" H 8700 4550 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 8700 4650 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 8700 4750 50  0001 L CNN "logic function desc"
+F 19 "Nexperia" H 8700 4850 50  0001 L CNN "manufacturer"
+F 20 "5.5V" H 8700 4950 50  0001 L CNN "max supply voltage"
+F 21 "1.2V" H 8700 5050 50  0001 L CNN "min supply voltage"
+F 22 "771-74LVC1T45GW125" H 8700 5150 50  0001 L CNN "mouser part number"
+F 23 "2-75uA" H 8700 5250 50  0001 L CNN "nominal supply current"
+F 24 "1" H 8700 5350 50  0001 L CNN "number of circuits"
+F 25 "1" H 8700 5450 50  0001 L CNN "number of inputs"
+F 26 "1" H 8700 5550 50  0001 L CNN "number of outputs"
+F 27 "SOT363" H 8700 5650 50  0001 L CNN "package"
+F 28 "2.5ns" H 8700 5750 50  0001 L CNN "propagation delay"
+F 29 "Yes" H 8700 5850 50  0001 L CNN "rohs"
+F 30 "+125°C" H 8700 5950 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 8700 6050 50  0001 L CNN "temperature range low"
+	1    8700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LVC1T45GW:74LVC1T45GW,125 U4
+U 1 1 60D290E0
+P 8700 1850
+F 0 "U4" H 9500 2115 50  0000 C CNN
+F 1 "74LVC1T45GW,125" H 9500 2024 50  0000 C CNN
+F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 2250 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 2350 50  0001 L CNN
+F 4 "+125°C" H 8700 2450 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 8700 2550 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 8700 2650 50  0001 L CNN "automotive"
+F 7 "IC" H 8700 2750 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 8700 2850 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 8700 2950 50  0001 L CNN "device class L2"
+F 10 "Drivers and Transceivers" H 8700 3050 50  0001 L CNN "device class L3"
+F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 3150 50  0001 L CNN "digikey description"
+F 12 "1727-4560-1-ND" H 8700 3250 50  0001 L CNN "digikey part number"
+F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 3350 50  0001 L CNN "footprint url"
+F 14 "1.1mm" H 8700 3450 50  0001 L CNN "height"
+F 15 "Yes" H 8700 3550 50  0001 L CNN "lead free"
+F 16 "2d660f43f9fba5f8" H 8700 3650 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 8700 3750 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 8700 3850 50  0001 L CNN "logic function desc"
+F 19 "Nexperia" H 8700 3950 50  0001 L CNN "manufacturer"
+F 20 "5.5V" H 8700 4050 50  0001 L CNN "max supply voltage"
+F 21 "1.2V" H 8700 4150 50  0001 L CNN "min supply voltage"
+F 22 "771-74LVC1T45GW125" H 8700 4250 50  0001 L CNN "mouser part number"
+F 23 "2-75uA" H 8700 4350 50  0001 L CNN "nominal supply current"
+F 24 "1" H 8700 4450 50  0001 L CNN "number of circuits"
+F 25 "1" H 8700 4550 50  0001 L CNN "number of inputs"
+F 26 "1" H 8700 4650 50  0001 L CNN "number of outputs"
+F 27 "SOT363" H 8700 4750 50  0001 L CNN "package"
+F 28 "2.5ns" H 8700 4850 50  0001 L CNN "propagation delay"
+F 29 "Yes" H 8700 4950 50  0001 L CNN "rohs"
+F 30 "+125°C" H 8700 5050 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 8700 5150 50  0001 L CNN "temperature range low"
+	1    8700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LVC1T45GW:74LVC1T45GW,125 U3
+U 1 1 60D2317A
+P 8700 900
+F 0 "U3" H 9500 1165 50  0000 C CNN
+F 1 "74LVC1T45GW,125" H 9500 1074 50  0000 C CNN
+F 2 "74LVC1T45GW:Nexperia-SOT363-11_2018-0-IPC_A" H 8700 1300 50  0001 L CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74LVC_LVCH1T45.pdf" H 8700 1400 50  0001 L CNN
+F 4 "+125°C" H 8700 1500 50  0001 L CNN "ambient temperature range high"
+F 5 "-40°C" H 8700 1600 50  0001 L CNN "ambient temperature range low"
+F 6 "No" H 8700 1700 50  0001 L CNN "automotive"
+F 7 "IC" H 8700 1800 50  0001 L CNN "category"
+F 8 "Integrated Circuits (ICs)" H 8700 1900 50  0001 L CNN "device class L1"
+F 9 "Logic ICs" H 8700 2000 50  0001 L CNN "device class L2"
+F 10 "Drivers and Transceivers" H 8700 2100 50  0001 L CNN "device class L3"
+F 11 "IC TRNSLTR BIDIRECTIONAL 6TSSOP" H 8700 2200 50  0001 L CNN "digikey description"
+F 12 "1727-4560-1-ND" H 8700 2300 50  0001 L CNN "digikey part number"
+F 13 "https://assets.nexperia.com/documents/outline-drawing/SOT363.pdf" H 8700 2400 50  0001 L CNN "footprint url"
+F 14 "1.1mm" H 8700 2500 50  0001 L CNN "height"
+F 15 "Yes" H 8700 2600 50  0001 L CNN "lead free"
+F 16 "2d660f43f9fba5f8" H 8700 2700 50  0001 L CNN "library id"
+F 17 "Non-Inverting" H 8700 2800 50  0001 L CNN "logic function"
+F 18 "Non-Inverting" H 8700 2900 50  0001 L CNN "logic function desc"
+F 19 "Nexperia" H 8700 3000 50  0001 L CNN "manufacturer"
+F 20 "5.5V" H 8700 3100 50  0001 L CNN "max supply voltage"
+F 21 "1.2V" H 8700 3200 50  0001 L CNN "min supply voltage"
+F 22 "771-74LVC1T45GW125" H 8700 3300 50  0001 L CNN "mouser part number"
+F 23 "2-75uA" H 8700 3400 50  0001 L CNN "nominal supply current"
+F 24 "1" H 8700 3500 50  0001 L CNN "number of circuits"
+F 25 "1" H 8700 3600 50  0001 L CNN "number of inputs"
+F 26 "1" H 8700 3700 50  0001 L CNN "number of outputs"
+F 27 "SOT363" H 8700 3800 50  0001 L CNN "package"
+F 28 "2.5ns" H 8700 3900 50  0001 L CNN "propagation delay"
+F 29 "Yes" H 8700 4000 50  0001 L CNN "rohs"
+F 30 "+125°C" H 8700 4100 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 8700 4200 50  0001 L CNN "temperature range low"
+	1    8700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L TS-1187A-B-A-B:TS-1187A-B-A-B RESET_SW0
+U 1 1 612CC871
+P 8400 3875
+F 0 "RESET_SW0" H 8400 4124 50  0000 C CNN
+F 1 "TS-1187A-B-A-B" H 8400 4033 50  0000 C CNN
+F 2 "TS-1187A-B-A-B:SW_TS-1187A-B-A-B" H 8400 3875 50  0001 L BNN
+F 3 "" H 8400 3875 50  0001 L BNN
+F 4 "XKB Industrial Precision" H 8400 3875 50  0001 L BNN "MANUFACTURER"
+F 5 "A0" H 8400 3875 50  0001 L BNN "PARTREV"
+F 6 "1.5mm" H 8400 3875 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "Manufacturer Recommendations" H 8400 3875 50  0001 L BNN "STANDARD"
+	1    8400 3875
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 3875
 $EndSCHEMATC

@@ -5,7 +5,7 @@ sphere_size = 39.5;
 sphere_offset = 2;
 
 // カップケースの谷の裾幅
-bottom_offset = 6.5;
+bottom_offset = 5.5;
 
 // ミラーの厚さ
 mirror_thin = 3.4;
