@@ -1,3 +1,11 @@
 (fp_lib_table
-  (lib (name "dynamis")(type "KiCad")(uri "C:/Users/tatsunori/workspaces/for-keyboards/keyboards/dynamis.pretty")(options "")(descr ""))
+  (lib (name "dynamis")(type "KiCad")(uri "${KIPRJMOD}/dynamis.pretty")(options "")(descr ""))
+  (lib (name "TS-1187A-B-A-B")(type "KiCad")(uri "${KIPRJMOD}/TS-1187A-B-A-B")(options "")(descr ""))
+  (lib (name "TLV70019DDCR")(type "KiCad")(uri "${KIPRJMOD}/IC_Texas Instruments_TLV70019DDCR/eec.pretty")(options "")(descr ""))
+  (lib (name "74LVC1T45GW")(type "KiCad")(uri "${KIPRJMOD}/IC_Nexperia_74LVC1T45GW,125/eec.pretty")(options "")(descr ""))
+  (lib (name "random-keyboard-parts")(type "KiCad")(uri "${KIPRJMOD}/random-keyboard-parts.pretty")(options "")(descr ""))
+  (lib (name "PMW3360DM-T2QU")(type "KiCad")(uri "${KIPRJMOD}/LIB_PMW3360DM-T2QU/PMW3360DM-T2QU/KiCad")(options "")(descr ""))
+  (lib (name "Switch_Keyboard_Cherry_MX")(type "KiCad")(uri "${KIPRJMOD}/keyswitch-kicad-library-main/modules/Switch_Keyboard_Cherry_MX.pretty")(options "")(descr ""))
+  (lib (name "Mounting_Keyboard_Stabilizer")(type "KiCad")(uri "${KIPRJMOD}/keyswitch-kicad-library-main/modules/Mounting_Keyboard_Stabilizer.pretty")(options "")(descr ""))
+  (lib (name "kbd")(type "KiCad")(uri "${KIPRJMOD}/kbd/kicad-footprints/kbd.pretty")(options "")(descr ""))
 )

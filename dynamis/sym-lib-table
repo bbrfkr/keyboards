@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "TS-1187A-B-A-B")(type "Legacy")(uri "${KIPRJMOD}/TS-1187A-B-A-B/TS-1187A-B-A-B.lib")(options "")(descr ""))
+  (lib (name "PMW3360DM-T2QU")(type "Legacy")(uri "${KIPRJMOD}/LIB_PMW3360DM-T2QU/PMW3360DM-T2QU/KiCad/PMW3360DM-T2QU.lib")(options "")(descr ""))
+  (lib (name "74LVC1T45GW")(type "Legacy")(uri "${KIPRJMOD}/IC_Nexperia_74LVC1T45GW,125/eec.lib")(options "")(descr ""))
+  (lib (name "TLV70019DDCR")(type "Legacy")(uri "${KIPRJMOD}/IC_Texas Instruments_TLV70019DDCR/eec.lib")(options "")(descr ""))
+)
