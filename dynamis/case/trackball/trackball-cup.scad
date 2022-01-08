@@ -1,5 +1,5 @@
 // カップ穴の直径
-sphere_size = 35;
+sphere_size = 34.5;
 
 // カップケースの谷の裾幅
 bottom_offset = 7.5;
@@ -8,7 +8,7 @@ bottom_offset = 7.5;
 mirror_thin = 3.4;
 
 // 台座の厚さ
-support_thin = 6.6;
+support_thin = 11.7;
 
 $fn = 128;
 
@@ -18,33 +18,33 @@ module ball_cup(){
         hull(){
             difference(){
                 union(){
-                    translate([0,0,mirror_thin+1+sphere_size/2]) sphere(sphere_size/2+2);
-                    cylinder(h=sphere_size/2+1.5, r1=sphere_size/2+1.5, r2=sphere_size/2+2);
+                    translate([0,0,mirror_thin+sphere_size/2]) sphere(sphere_size/2 +1.6);
+                    cylinder(h=mirror_thin+sphere_size/2, r1=sphere_size/2 +1.6, r2=sphere_size/2 +1.6);
                 }
                 // カップ穴の3/5の位置でぶった切る
-                translate([0,0,mirror_thin+1+ 70 * sphere_size/128]) cylinder(h=9999, r1=9999, r2=9999);
+                translate([0,0,mirror_thin+ 70 * sphere_size/128]) cylinder(h=9999, r1=9999, r2=9999);
             }
             translate([0,0, support_thin/2]) cube([38.1, 38.1, support_thin], center=true);
         }
 
         // カップ穴
-        translate([0,0,mirror_thin+1+sphere_size/2]) sphere(sphere_size/2);
+        translate([0,0,mirror_thin+sphere_size/2]) sphere(sphere_size/2);
 
         // ビーズ用穴
-        translate([0,0,mirror_thin+1]) {
+        translate([0,0,mirror_thin]) {
             rotate(0){
                 translate([0, -62 * (sphere_size)/128, sphere_size/3]){
-                    sphere(2);
+                    sphere(1.6);
                 }
             }
             rotate(120){
                 translate([0, -62 * (sphere_size)/128, sphere_size/3]){
-                    sphere(2);
+                    sphere(1.6);
                 }
             }
             rotate(240){
                 translate([0, -62 * (sphere_size)/128, sphere_size/3]){
-                    sphere(2);
+                    sphere(1.6);
                 }
             }
         }
