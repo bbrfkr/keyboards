@@ -33,17 +33,17 @@ module ball_cup(){
         // ビーズ用穴
         translate([0,0,mirror_thin]) {
             rotate(0){
-                translate([0, -60 * (sphere_size)/128, sphere_size/3]){
+                translate([0, -62.5 * (sphere_size)/128, sphere_size/3]){
                     sphere(1.6);
                 }
             }
             rotate(120){
-                translate([0, -60 * (sphere_size)/128, sphere_size/3]){
+                translate([0, -62.5 * (sphere_size)/128, sphere_size/3]){
                     sphere(1.6);
                 }
             }
             rotate(240){
-                translate([0, -60 * (sphere_size)/128, sphere_size/3]){
+                translate([0, -62.5 * (sphere_size)/128, sphere_size/3]){
                     sphere(1.6);
                 }
             }
