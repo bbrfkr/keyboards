@@ -6,3 +6,6 @@
 *.drl
 *.gbrjob
 *drl_map.ps
+*.log
+*.FCStd1
+*-backups
